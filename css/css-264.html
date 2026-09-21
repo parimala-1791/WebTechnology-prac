@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 264 - SaaS HR Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .employees {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .employee {
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        @media(max-width:800px) {
+            .stats {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width:500px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>HR Dashboard</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <p>Employees</p>
+            <div class="number">248</div>
+        </div>
+
+        <div class="card">
+            <p>Departments</p>
+            <div class="number">12</div>
+        </div>
+
+        <div class="card">
+            <p>Open Positions</p>
+            <div class="number">18</div>
+        </div>
+
+        <div class="card">
+            <p>Attendance</p>
+            <div class="number">94%</div>
+        </div>
+
+    </div>
+
+    <div class="employees">
+
+        <h2>Employees</h2>
+
+        <div class="employee">
+            <span>Alex Johnson</span>
+            <span>Engineering</span>
+        </div>
+
+        <div class="employee">
+            <span>Sarah Miller</span>
+            <span>Design</span>
+        </div>
+
+        <div class="employee">
+            <span>Ryan Kumar</span>
+            <span>Marketing</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

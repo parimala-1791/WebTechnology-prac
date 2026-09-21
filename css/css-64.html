@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 64 - Stats Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-top: 40px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+
+        .card {
+            width: 220px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+            text-align: center;
+        }
+
+        .number {
+            font-size: 35px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .label {
+            color: #64748b;
+            margin-top: 8px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Website Statistics</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <div class="number">1,250</div>
+            <div class="label">Users</div>
+        </div>
+
+        <div class="card">
+            <div class="number">850</div>
+            <div class="label">Projects</div>
+        </div>
+
+        <div class="card">
+            <div class="number">98%</div>
+            <div class="label">Success Rate</div>
+        </div>
+
+        <div class="card">
+            <div class="number">45</div>
+            <div class="label">Countries</div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

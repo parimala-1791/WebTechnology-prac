@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 147 - Price Comparison</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 60px 8%;
+        }
+
+        .product {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .product h2 {
+            color: #2563eb;
+        }
+
+        .price {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .old {
+            text-decoration: line-through;
+            color: #98a2b3;
+        }
+
+        .discount {
+            color: green;
+            font-weight: bold;
+        }
+
+        @media(max-width: 700px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<section class="comparison">
+
+    <div class="product">
+        <h2>Basic</h2>
+        <div class="old">$30</div>
+        <div class="price">$20</div>
+        <p class="discount">33% OFF</p>
+    </div>
+
+    <div class="product">
+        <h2>Pro</h2>
+        <div class="old">$60</div>
+        <div class="price">$40</div>
+        <p class="discount">33% OFF</p>
+    </div>
+
+    <div class="product">
+        <h2>Business</h2>
+        <div class="old">$100</div>
+        <div class="price">$70</div>
+        <p class="discount">30% OFF</p>
+    </div>
+
+</section>
+
+</body>
+</html>

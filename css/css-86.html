@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 86 - Sidebar Navigation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 500px;
+        }
+
+        .sidebar {
+            width: 230px;
+            background: #172554;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+        }
+
+        .sidebar a:hover {
+            background: #2563eb;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .content h1 {
+            color: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 650px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <h2>My Dashboard</h2>
+
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Projects</a>
+            <a href="#">Messages</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main class="content">
+            <h1>Sidebar Navigation</h1>
+
+            <p>
+                This page demonstrates a simple responsive
+                sidebar navigation layout using CSS.
+            </p>
+        </main>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

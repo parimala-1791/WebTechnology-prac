@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 61 - Stepper</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .number {
+            width: 45px;
+            height: 45px;
+            margin: auto;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .step p {
+            color: #475569;
+        }
+
+        .line {
+            height: 4px;
+            background: #2563eb;
+            position: relative;
+            top: -65px;
+            margin: 0 12%;
+            z-index: 0;
+        }
+
+        .number {
+            position: relative;
+            z-index: 1;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 600px) {
+            .steps {
+                flex-direction: column;
+                gap: 25px;
+            }
+
+            .line {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registration Steps</h1>
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="number">1</div>
+                <p>Account</p>
+            </div>
+
+            <div class="step">
+                <div class="number">2</div>
+                <p>Profile</p>
+            </div>
+
+            <div class="step">
+                <div class="number">3</div>
+                <p>Payment</p>
+            </div>
+
+            <div class="step">
+                <div class="number">4</div>
+                <p>Complete</p>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

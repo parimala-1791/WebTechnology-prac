@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 17 - Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .box {
+            width: 100%;
+            height: 120px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #2563eb;
+            box-sizing: border-box;
+        }
+
+        .visible {
+            overflow: visible;
+            background: #dbeafe;
+        }
+
+        .hidden {
+            overflow: hidden;
+            background: #dcfce7;
+        }
+
+        .scroll {
+            overflow: scroll;
+            background: #fef3c7;
+        }
+
+        .auto {
+            overflow: auto;
+            background: #ede9fe;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Overflow</h1>
+</header>
+
+<div class="content">
+
+    <div class="box hidden">
+        <b>Hidden:</b>
+        This content is inside a box with limited height.
+        Overflowing content is hidden from view.
+        This demonstrates the overflow property.
+    </div>
+
+    <div class="box scroll">
+        <b>Scroll:</b>
+        This box allows scrolling when the content
+        is larger than the available space.
+        More content is added to demonstrate scrolling.
+        Keep scrolling to see additional text.
+    </div>
+
+    <div class="box auto">
+        <b>Auto:</b>
+        The browser automatically adds scrolling
+        when it is required.
+    </div>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

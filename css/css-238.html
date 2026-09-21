@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 238 - SaaS Security Center</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .security {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .score {
+            font-size: 45px;
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        .item {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secure {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: #d97706;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="security">
+
+        <h1>Security Center</h1>
+
+        <p>Security Score</p>
+        <div class="score">92%</div>
+
+        <div class="item">
+            <span>Two-Factor Authentication</span>
+            <span class="secure">Enabled</span>
+        </div>
+
+        <div class="item">
+            <span>Password Strength</span>
+            <span class="secure">Strong</span>
+        </div>
+
+        <div class="item">
+            <span>Recent Login</span>
+            <span class="warning">Review</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

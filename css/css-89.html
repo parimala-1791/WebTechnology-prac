@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 89 - Bar Chart</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        .container {
+            width: 700px;
+            margin: 60px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #cbd5e1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+        }
+
+        .chart {
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            border-left: 2px solid #94a3b8;
+            border-bottom: 2px solid #94a3b8;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .bar {
+            width: 60px;
+            background: #2563eb;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            color: white;
+            padding-top: 8px;
+        }
+
+        .b1 { height: 60%; }
+        .b2 { height: 85%; }
+        .b3 { height: 45%; }
+        .b4 { height: 75%; }
+        .b5 { height: 95%; }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 750px) {
+            .container {
+                width: 85%;
+            }
+
+            .bar {
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Monthly Sales</h1>
+
+        <div class="chart">
+            <div class="bar b1">60</div>
+            <div class="bar b2">85</div>
+            <div class="bar b3">45</div>
+            <div class="bar b4">75</div>
+            <div class="bar b5">95</div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

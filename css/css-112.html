@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 112 - Stepper</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .steps::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: #d1d5db;
+        }
+
+        .step {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .number {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .step p {
+            color: #667085;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="container">
+
+    <h1>Project Setup</h1>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="number">1</div>
+            <p>Account</p>
+        </div>
+
+        <div class="step">
+            <div class="number">2</div>
+            <p>Details</p>
+        </div>
+
+        <div class="step">
+            <div class="number">3</div>
+            <p>Payment</p>
+        </div>
+
+        <div class="step">
+            <div class="number">4</div>
+            <p>Complete</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

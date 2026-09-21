@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 58 - Loading Component</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .loader {
+            width: 70px;
+            height: 70px;
+            margin: 40px auto;
+            border: 8px solid #dbeafe;
+            border-top: 8px solid #2563eb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        p {
+            color: #64748b;
+        }
+
+        .navigation {
+            margin: 70px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Loading...</h1>
+
+        <div class="loader"></div>
+
+        <p>Please wait while the page loads.</p>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 232 - SaaS Integration Page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .integrations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .integration {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        .connect {
+            margin-left: auto;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 7px;
+            background: #4f46e5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Integrations</h1>
+    <p>Connect your favorite applications.</p>
+
+    <div class="integrations">
+
+        <div class="integration">
+            <div class="icon">📧</div>
+            <strong>Email</strong>
+            <button class="connect">Connect</button>
+        </div>
+
+        <div class="integration">
+            <div class="icon">📅</div>
+            <strong>Calendar</strong>
+            <button class="connect">Connect</button>
+        </div>
+
+        <div class="integration">
+            <div class="icon">💬</div>
+            <strong>Chat</strong>
+            <button class="connect">Connect</button>
+        </div>
+
+        <div class="integration">
+            <div class="icon">☁️</div>
+            <strong>Cloud Storage</strong>
+            <button class="connect">Connect</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

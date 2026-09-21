@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 51 - Dropdown Menu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        nav {
+            background: #172554;
+            padding: 15px 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 0;
+            background: white;
+            width: 160px;
+            box-shadow: 0 5px 15px #94a3b8;
+            border-radius: 6px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px;
+            color: #172554;
+        }
+
+        .dropdown-content a:hover {
+            background: #dbeafe;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            color: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Products ▼</a>
+
+            <div class="dropdown-content">
+                <a href="#">Laptops</a>
+                <a href="#">Mobiles</a>
+                <a href="#">Tablets</a>
+            </div>
+        </div>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <h1>CSS Dropdown Menu</h1>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 262 - SaaS Finance Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .balance {
+            background: #4f46e5;
+            color: white;
+            padding: 35px;
+            border-radius: 18px;
+        }
+
+        .balance h1 {
+            font-size: 45px;
+        }
+
+        .transactions {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .transaction {
+            padding: 18px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .positive {
+            color: #16a34a;
+        }
+
+        .negative {
+            color: #dc2626;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="balance">
+
+        <p>Available Balance</p>
+
+        <h1>$28,450</h1>
+
+        <p>Account ending in **** 2845</p>
+
+    </div>
+
+    <div class="transactions">
+
+        <h2>Recent Transactions</h2>
+
+        <div class="transaction">
+            <span>Salary</span>
+            <span class="positive">+$4,500</span>
+        </div>
+
+        <div class="transaction">
+            <span>Subscription</span>
+            <span class="negative">-$49</span>
+        </div>
+
+        <div class="transaction">
+            <span>Shopping</span>
+            <span class="negative">-$120</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

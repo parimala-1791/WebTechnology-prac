@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 175 - Data Processing Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.dashboard{padding:40px 8%}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:15px}
+.card h2{color:#2563eb;font-size:32px}
+.progress{height:12px;background:#e5e7eb;border-radius:10px}
+.fill{height:100%;width:75%;background:#2563eb;border-radius:10px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+<h1>Data Processing</h1>
+
+<div class="cards">
+<div class="card"><p>Records Processed</p><h2>85K</h2></div>
+<div class="card"><p>Processing Time</p><h2>2.4s</h2></div>
+<div class="card"><p>Accuracy</p><h2>96%</h2></div>
+</div>
+
+<div class="card" style="margin-top:25px">
+<h2>Processing Progress</h2>
+<div class="progress"><div class="fill"></div></div>
+<p>75% completed</p>
+</div>
+</div>
+
+</body>
+</html>

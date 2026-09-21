@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 219 - SaaS Onboarding</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 18px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .circle {
+            width: 45px;
+            height: 45px;
+            margin: auto;
+            border-radius: 50%;
+            background: #4f46e5;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .step p {
+            font-size: 14px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Welcome to Our Platform</h1>
+    <p>Complete these steps to get started.</p>
+
+    <div class="steps">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <p>Create Account</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <p>Set Profile</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <p>Invite Team</p>
+        </div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <p>Get Started</p>
+        </div>
+
+    </div>
+
+    <button>Continue</button>
+
+</div>
+
+</body>
+</html>

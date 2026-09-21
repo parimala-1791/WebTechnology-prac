@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 124 - Responsive Pricing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 60px 8%;
+        }
+
+        .plan {
+            background: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .plan h2 {
+            color: #2563eb;
+        }
+
+        .price {
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            line-height: 2;
+            color: #667085;
+        }
+
+        button {
+            border: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+        }
+
+        @media(max-width: 800px) {
+            .pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="pricing">
+
+    <div class="plan">
+        <h2>Starter</h2>
+        <div class="price">$10</div>
+        <ul>
+            <li>5 Projects</li>
+            <li>10 GB Storage</li>
+            <li>Email Support</li>
+        </ul>
+        <button>Choose</button>
+    </div>
+
+    <div class="plan">
+        <h2>Professional</h2>
+        <div class="price">$30</div>
+        <ul>
+            <li>Unlimited Projects</li>
+            <li>100 GB Storage</li>
+            <li>Priority Support</li>
+        </ul>
+        <button>Choose</button>
+    </div>
+
+    <div class="plan">
+        <h2>Business</h2>
+        <div class="price">$60</div>
+        <ul>
+            <li>Unlimited Storage</li>
+            <li>Advanced Analytics</li>
+            <li>24/7 Support</li>
+        </ul>
+        <button>Choose</button>
+    </div>
+
+</div>
+
+</body>
+</html>

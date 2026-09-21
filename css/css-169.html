@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 169 - AI Feature Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .features {
+            padding: 50px 8%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            transition: .3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .feature h2 {
+            color: #2563eb;
+        }
+
+        .feature p {
+            color: #667085;
+            line-height: 1.6;
+        }
+
+        @media(max-width:800px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="text-align:center;">AI Features</h1>
+
+<section class="features">
+
+    <div class="feature">
+        <div class="icon">🤖</div>
+        <h2>AI Assistant</h2>
+        <p>Interact with an intelligent virtual assistant.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">📈</div>
+        <h2>Predictions</h2>
+        <p>Generate predictions from your data.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">🔍</div>
+        <h2>Smart Search</h2>
+        <p>Find information quickly using intelligent search.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

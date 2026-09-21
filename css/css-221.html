@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 221 - SaaS Profile Dashboard</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial; background: #f4f6fa; color: #172033; }
+
+        nav { background: #111827; padding: 18px; }
+        nav a { color: white; text-decoration: none; margin-right: 20px; }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .profile {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #4f46e5;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .number {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        @media(max-width:650px) {
+            .profile { flex-direction: column; text-align: center; }
+            .stats { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="profile">
+        <div class="avatar">PN</div>
+        <div>
+            <h1>Parimala Nakka</h1>
+            <p>Computing & Data Science Student</p>
+            <p>📍 India</p>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <p>Projects</p>
+            <div class="number">24</div>
+        </div>
+
+        <div class="card">
+            <p>Tasks Completed</p>
+            <div class="number">186</div>
+        </div>
+
+        <div class="card">
+            <p>Achievements</p>
+            <div class="number">12</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 159 - Calendar Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .calendar {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .days {
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 8px;
+        }
+
+        .day {
+            min-height: 70px;
+            padding: 10px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .heading {
+            min-height: auto;
+            background: #2563eb;
+            color: white;
+            text-align: center;
+        }
+
+        .event {
+            margin-top: 10px;
+            padding: 5px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        @media(max-width:600px) {
+            .day {
+                min-height: 50px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="calendar">
+
+    <h1>September 2026</h1>
+
+    <div class="days">
+
+        <div class="day heading">Sun</div>
+        <div class="day heading">Mon</div>
+        <div class="day heading">Tue</div>
+        <div class="day heading">Wed</div>
+        <div class="day heading">Thu</div>
+        <div class="day heading">Fri</div>
+        <div class="day heading">Sat</div>
+
+        <div class="day"></div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3<div class="event">Meeting</div></div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11<div class="event">Deadline</div></div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

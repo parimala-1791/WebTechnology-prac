@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 100 - Complete SaaS Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 7px;
+        }
+
+        .sidebar a:hover {
+            background: #2563eb;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .topbar h1 {
+            color: #172554;
+        }
+
+        .user {
+            width: 42px;
+            height: 42px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #64748b;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .positive {
+            color: #16a34a;
+            margin-top: 8px;
+        }
+
+        .projects {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        .projects h2 {
+            color: #172554;
+        }
+
+        .project {
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project strong {
+            color: #2563eb;
+        }
+
+        .navigation {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 800px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .topbar {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <h2>CloudDesk</h2>
+
+            <a href="#">Overview</a>
+            <a href="#">Projects</a>
+            <a href="#">Analytics</a>
+            <a href="#">Team</a>
+            <a href="#">Settings</a>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="topbar">
+
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Welcome back, Parimala!</p>
+                </div>
+
+                <div class="user">P</div>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <div class="value">₹2.4L</div>
+                    <div class="positive">▲ 15%</div>
+                </div>
+
+                <div class="card">
+                    <h3>Active Users</h3>
+                    <div class="value">3,420</div>
+                    <div class="positive">▲ 8%</div>
+                </div>
+
+                <div class="card">
+                    <h3>Projects</h3>
+                    <div class="value">45</div>
+                    <div class="positive">▲ 5%</div>
+                </div>
+
+            </div>
+
+            <div class="projects">
+
+                <h2>Recent Projects</h2>
+
+                <div class="project">
+                    <strong>Portfolio Website</strong>
+                    <p>Status: Completed</p>
+                </div>
+
+                <div class="project">
+                    <strong>Analytics Dashboard</strong>
+                    <p>Status: In Progress</p>
+                </div>
+
+                <div class="project">
+                    <strong>E-Commerce UI</strong>
+                    <p>Status: Planning</p>
+                </div>
+
+            </div>
+
+            <div class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="index.html">Back to CSS Programs</a>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

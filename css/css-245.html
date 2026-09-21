@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 245 - SaaS Support Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .tickets {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .ticket {
+            padding: 18px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .open {
+            color: #dc2626;
+        }
+
+        .resolved {
+            color: #16a34a;
+        }
+
+        @media(max-width:800px) {
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:500px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Support Dashboard</h1>
+
+    <div class="stats">
+
+        <div class="stat">
+            <p>Open Tickets</p>
+            <h2 class="open">24</h2>
+        </div>
+
+        <div class="stat">
+            <p>Resolved</p>
+            <h2 class="resolved">182</h2>
+        </div>
+
+        <div class="stat">
+            <p>Average Response</p>
+            <h2>18m</h2>
+        </div>
+
+        <div class="stat">
+            <p>Satisfaction</p>
+            <h2>94%</h2>
+        </div>
+
+    </div>
+
+    <div class="tickets">
+
+        <h2>Recent Tickets</h2>
+
+        <div class="ticket">
+            <span>Unable to login</span>
+            <span class="open">Open</span>
+        </div>
+
+        <div class="ticket">
+            <span>Payment issue</span>
+            <span class="resolved">Resolved</span>
+        </div>
+
+        <div class="ticket">
+            <span>Account settings</span>
+            <span class="open">Open</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

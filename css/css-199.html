@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 199 - SaaS Developer Portal</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.portal{max-width:1000px;margin:40px auto;padding:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:30px;border-radius:15px}
+.card h2{color:#2563eb}
+.code{background:#172033;color:#cbd5e1;padding:20px;border-radius:8px;margin-top:25px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="portal">
+
+<h1>Developer Portal</h1>
+<p>Build powerful applications using our platform.</p>
+
+<div class="cards">
+<div class="card"><h2>API Reference</h2><p>Explore available APIs.</p></div>
+<div class="card"><h2>SDKs</h2><p>Use our development tools.</p></div>
+<div class="card"><h2>Guides</h2><p>Learn how to build applications.</p></div>
+</div>
+
+<div class="code">
+GET /api/v1/users
+</div>
+
+</div>
+
+</body>
+</html>

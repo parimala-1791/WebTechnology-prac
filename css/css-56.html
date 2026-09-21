@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 56 - Notification</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            width: 500px;
+            margin: 60px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+        }
+
+        .notification {
+            background: white;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #cbd5e1;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        .notification h3 {
+            margin: 0;
+            color: #172554;
+        }
+
+        .notification p {
+            margin-bottom: 0;
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Notifications</h1>
+
+        <div class="notification">
+            <div class="icon">🔔</div>
+            <div>
+                <h3>New Message</h3>
+                <p>You received a new message.</p>
+            </div>
+        </div>
+
+        <div class="notification">
+            <div class="icon">✓</div>
+            <div>
+                <h3>Task Completed</h3>
+                <p>Your task was completed successfully.</p>
+            </div>
+        </div>
+
+        <div class="notification">
+            <div class="icon">⚠</div>
+            <div>
+                <h3>Warning</h3>
+                <p>Your storage is almost full.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

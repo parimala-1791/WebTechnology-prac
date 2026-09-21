@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 261 - SaaS Education Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            padding: 70px 8%;
+            background: #eef2ff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .courses {
+            max-width: 1100px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 20px;
+        }
+
+        .progress span {
+            display: block;
+            width: 70%;
+            height: 100%;
+            background: #4f46e5;
+            border-radius: 20px;
+        }
+
+        @media(max-width:700px) {
+            .courses {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>Learn Without Limits</h1>
+
+    <p>Build skills with modern online courses.</p>
+
+</section>
+
+<section class="courses">
+
+    <div class="course">
+        <h2>Data Science</h2>
+        <p>18 lessons</p>
+        <div class="progress">
+            <span></span>
+        </div>
+        <p>70% complete</p>
+    </div>
+
+    <div class="course">
+        <h2>Web Development</h2>
+        <p>24 lessons</p>
+        <div class="progress">
+            <span style="width:50%"></span>
+        </div>
+        <p>50% complete</p>
+    </div>
+
+    <div class="course">
+        <h2>AI Fundamentals</h2>
+        <p>20 lessons</p>
+        <div class="progress">
+            <span style="width:35%"></span>
+        </div>
+        <p>35% complete</p>
+    </div>
+
+</section>
+
+</body>
+</html>

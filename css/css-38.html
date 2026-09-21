@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 38 - Feature Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-top: 40px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px #cbd5e1;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 45px;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Features</h1>
+
+    <div class="features">
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h2>Fast</h2>
+            <p>Our system provides fast and efficient performance.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔒</div>
+            <h2>Secure</h2>
+            <p>Your information is protected using secure systems.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h2>Responsive</h2>
+            <p>The design works on computers, tablets and mobiles.</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 138 - Password Strength</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .box {
+            width: 400px;
+            max-width: 90%;
+            margin: 70px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .strength {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .strength::before {
+            content: "";
+            display: block;
+            width: 75%;
+            height: 100%;
+            background: #22c55e;
+            border-radius: 10px;
+        }
+
+        .text {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="box">
+
+    <h1>Create Password</h1>
+
+    <input type="password" placeholder="Enter password">
+
+    <div class="strength"></div>
+
+    <p class="text">Strong Password</p>
+
+</div>
+
+</body>
+</html>

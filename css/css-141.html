@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 141 - Skeleton Loading</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .card {
+            width: 400px;
+            max-width: 90%;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .skeleton {
+            background: linear-gradient(
+                90deg,
+                #e5e7eb,
+                #f3f4f6,
+                #e5e7eb
+            );
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+            border-radius: 7px;
+        }
+
+        .image {
+            height: 180px;
+        }
+
+        .title {
+            height: 25px;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        .line {
+            height: 15px;
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        @keyframes loading {
+            to {
+                background-position: -200% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="card">
+
+    <div class="skeleton image"></div>
+    <div class="skeleton title"></div>
+    <div class="skeleton line"></div>
+    <div class="skeleton line"></div>
+
+</div>
+
+</body>
+</html>

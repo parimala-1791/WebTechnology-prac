@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 11 - Add Delete Items</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input {
+            padding: 12px;
+            width: 60%;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        li {
+            list-style: none;
+            background: #f1f5f9;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        li button {
+            background: #dc2626;
+            margin-left: 15px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Add and Delete List Items</h1>
+
+    <input type="text" id="item" placeholder="Enter item">
+
+    <button onclick="addItem()">Add</button>
+
+    <ul id="list"></ul>
+
+</div>
+
+<script>
+
+function addItem() {
+
+    let input = document.getElementById("item");
+
+    if (input.value.trim() === "") {
+        alert("Enter an item.");
+        return;
+    }
+
+    let li = document.createElement("li");
+
+    li.innerHTML =
+        input.value +
+        ' <button onclick="deleteItem(this)">Delete</button>';
+
+    document.getElementById("list").appendChild(li);
+
+    input.value = "";
+
+}
+
+function deleteItem(button) {
+
+    button.parentElement.remove();
+
+}
+
+</script>
+
+</body>
+</html>

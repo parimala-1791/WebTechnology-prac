@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 15 - Display</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .block {
+            display: block;
+            background: #dbeafe;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background: #dcfce7;
+            padding: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background: #fef3c7;
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Display Property</h1>
+</header>
+
+<div class="content">
+
+    <h2>Block</h2>
+
+    <div class="block">
+        Block Element
+    </div>
+
+    <h2>Inline</h2>
+
+    <span class="inline">Inline Element 1</span>
+    <span class="inline">Inline Element 2</span>
+
+    <h2>Inline Block</h2>
+
+    <div class="inline-block">
+        Inline Block 1
+    </div>
+
+    <div class="inline-block">
+        Inline Block 2
+    </div>
+
+    <h2>Display None</h2>
+
+    <p class="none">
+        This text is hidden using display: none.
+    </p>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

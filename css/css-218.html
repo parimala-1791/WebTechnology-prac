@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 218 - SaaS Notifications</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .notifications {
+            max-width: 650px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .notification {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,.06);
+        }
+
+        .new {
+            border-left: 5px solid #4f46e5;
+        }
+
+        .time {
+            color: #6b7280;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="notifications">
+
+    <h1>Notifications</h1>
+
+    <div class="notification new">
+        <div>
+            <strong>New message</strong>
+            <p>You received a new message.</p>
+        </div>
+        <span class="time">2m</span>
+    </div>
+
+    <div class="notification">
+        <div>
+            <strong>Payment completed</strong>
+            <p>Your payment was successful.</p>
+        </div>
+        <span class="time">1h</span>
+    </div>
+
+    <div class="notification">
+        <div>
+            <strong>Project updated</strong>
+            <p>Your project was updated.</p>
+        </div>
+        <span class="time">3h</span>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 168 - ML Model Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .models {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .model {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.06);
+        }
+
+        .model h2 {
+            color: #2563eb;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 10px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        @media(max-width:800px) {
+            .models {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<section class="models">
+
+    <div class="model">
+        <h2>Image Classifier</h2>
+        <p>Classifies images using machine learning.</p>
+        <span class="tag">Computer Vision</span>
+    </div>
+
+    <div class="model">
+        <h2>Spam Detector</h2>
+        <p>Detects unwanted messages.</p>
+        <span class="tag">NLP</span>
+    </div>
+
+    <div class="model">
+        <h2>Price Predictor</h2>
+        <p>Predicts prices using historical data.</p>
+        <span class="tag">Regression</span>
+    </div>
+
+</section>
+
+</body>
+</html>

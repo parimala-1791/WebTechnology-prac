@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 207 - Analytics Bar Chart</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .chart {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .label {
+            width: 100px;
+        }
+
+        .bar {
+            flex: 1;
+            height: 30px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: #4f46e5;
+        }
+
+        .one { width: 85%; }
+        .two { width: 65%; }
+        .three { width: 90%; }
+        .four { width: 55%; }
+        .five { width: 75%; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="chart">
+    <h1>Monthly Analytics</h1>
+
+    <div class="bar-row">
+        <div class="label">Jan</div>
+        <div class="bar"><div class="fill one"></div></div>
+    </div>
+
+    <div class="bar-row">
+        <div class="label">Feb</div>
+        <div class="bar"><div class="fill two"></div></div>
+    </div>
+
+    <div class="bar-row">
+        <div class="label">Mar</div>
+        <div class="bar"><div class="fill three"></div></div>
+    </div>
+
+    <div class="bar-row">
+        <div class="label">Apr</div>
+        <div class="bar"><div class="fill four"></div></div>
+    </div>
+
+    <div class="bar-row">
+        <div class="label">May</div>
+        <div class="bar"><div class="fill five"></div></div>
+    </div>
+
+</div>
+
+</body>
+</html>

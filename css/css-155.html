@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 155 - Task Management UI</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .tasks {
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        .task {
+            background: white;
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: #98a2b3;
+        }
+
+        .status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            font-size: 12px;
+        }
+
+        .done {
+            background: #dcfce7;
+            color: #15803d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="tasks">
+
+    <h1>My Tasks</h1>
+
+    <div class="task">
+        <span>Complete website design</span>
+        <span class="status">In Progress</span>
+    </div>
+
+    <div class="task">
+        <span>Prepare project report</span>
+        <span class="status">Pending</span>
+    </div>
+
+    <div class="task">
+        <span class="completed">Create homepage</span>
+        <span class="status done">Completed</span>
+    </div>
+
+</div>
+
+</body>
+</html>

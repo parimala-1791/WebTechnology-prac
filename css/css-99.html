@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 99 - SaaS Landing Section</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .hero {
+            min-height: 500px;
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            box-sizing: border-box;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #dbeafe;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .primary {
+            background: white;
+            color: #2563eb;
+        }
+
+        .secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .preview {
+            width: 350px;
+            background: white;
+            color: #172554;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .preview h2 {
+            color: #2563eb;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 35px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .preview {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Grow Your Business Faster</h1>
+
+            <p>
+                Manage projects, teams and analytics from
+                one simple and powerful SaaS platform.
+            </p>
+
+            <div class="buttons">
+                <a href="#" class="primary">Start Free</a>
+                <a href="#" class="secondary">View Demo</a>
+            </div>
+
+        </div>
+
+        <div class="preview">
+
+            <h2>Dashboard Preview</h2>
+
+            <p>Projects: 24</p>
+            <p>Team Members: 12</p>
+            <p>Tasks Completed: 86%</p>
+
+        </div>
+
+    </section>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

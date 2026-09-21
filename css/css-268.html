@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 268 - SaaS Enterprise Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 700px;
+        }
+
+        aside {
+            width: 230px;
+            background: #172033;
+            color: white;
+            padding: 25px;
+        }
+
+        aside a {
+            display: block;
+            color: #d1d5db;
+            padding: 14px 0;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .number {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            background: white;
+            padding: 30px;
+            margin-top: 25px;
+            border-radius: 15px;
+        }
+
+        @media(max-width:900px) {
+            .cards {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width:650px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="layout">
+
+    <aside>
+
+        <h2>Enterprise</h2>
+
+        <a href="#">Dashboard</a>
+        <a href="#">Analytics</a>
+        <a href="#">Employees</a>
+        <a href="#">Customers</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+
+    </aside>
+
+    <main>
+
+        <h1>Enterprise Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Revenue</p>
+                <div class="number">$2.4M</div>
+            </div>
+
+            <div class="card">
+                <p>Employees</p>
+                <div class="number">1,240</div>
+            </div>
+
+            <div class="card">
+                <p>Customers</p>
+                <div class="number">18K</div>
+            </div>
+
+            <div class="card">
+                <p>Growth</p>
+                <div class="number">22%</div>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h2>Business Summary</h2>
+
+            <p>
+                The enterprise platform provides analytics,
+                customer management and business intelligence
+                in one unified dashboard.
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

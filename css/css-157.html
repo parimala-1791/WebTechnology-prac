@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 157 - Chat Interface</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .chat {
+            width: 500px;
+            max-width: 90%;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2563eb;
+            color: white;
+            padding: 20px;
+        }
+
+        .messages {
+            padding: 20px;
+        }
+
+        .message {
+            padding: 12px 16px;
+            margin: 12px 0;
+            border-radius: 15px;
+            max-width: 70%;
+        }
+
+        .received {
+            background: #eef2f7;
+        }
+
+        .sent {
+            background: #2563eb;
+            color: white;
+            margin-left: auto;
+        }
+
+        .input {
+            padding: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="chat">
+
+    <div class="header">
+        <h2>Team Chat</h2>
+    </div>
+
+    <div class="messages">
+
+        <div class="message received">
+            Hi! How is the project going?
+        </div>
+
+        <div class="message sent">
+            It's going great!
+        </div>
+
+        <div class="message received">
+            Perfect. Let's finish it today.
+        </div>
+
+        <div class="message sent">
+            Sure 👍
+        </div>
+
+    </div>
+
+    <div class="input">
+        <input type="text" placeholder="Type a message...">
+    </div>
+
+</div>
+
+</body>
+</html>

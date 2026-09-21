@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 05 - Create Elements</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #container {
+            margin-top: 25px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Create HTML Element</h1>
+
+    <button onclick="createElementDemo()">Create Paragraph</button>
+
+    <div id="container"></div>
+
+</div>
+
+<script>
+
+function createElementDemo() {
+
+    let paragraph = document.createElement("p");
+
+    paragraph.textContent =
+        "This paragraph was created dynamically using JavaScript.";
+
+    paragraph.style.fontSize = "18px";
+    paragraph.style.padding = "15px";
+    paragraph.style.background = "#eff6ff";
+
+    document.getElementById("container").appendChild(paragraph);
+
+}
+
+</script>
+
+</body>
+</html>

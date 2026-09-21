@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 05 - Keydown</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input {
+            padding: 15px;
+            width: 80%;
+            font-size: 18px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Keydown Event</h1>
+
+    <input type="text" id="input" placeholder="Press any key">
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+document.getElementById("input").addEventListener("keydown", function(event) {
+
+    document.getElementById("result").textContent =
+        "You pressed: " + event.key;
+
+});
+
+</script>
+
+</body>
+</html>

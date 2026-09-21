@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 164 - Machine Learning Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .dashboard {
+            padding: 40px 8%;
+        }
+
+        .models {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .model {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .model h2 {
+            color: #2563eb;
+        }
+
+        .accuracy {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .fill {
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .m1 { width: 92%; }
+        .m2 { width: 87%; }
+        .m3 { width: 78%; }
+
+        @media(max-width:800px) {
+            .models {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+
+    <h1>Machine Learning Models</h1>
+
+    <div class="models">
+
+        <div class="model">
+            <h2>Model A</h2>
+            <p>Accuracy</p>
+            <div class="accuracy">92%</div>
+            <div class="progress">
+                <div class="fill m1"></div>
+            </div>
+        </div>
+
+        <div class="model">
+            <h2>Model B</h2>
+            <p>Accuracy</p>
+            <div class="accuracy">87%</div>
+            <div class="progress">
+                <div class="fill m2"></div>
+            </div>
+        </div>
+
+        <div class="model">
+            <h2>Model C</h2>
+            <p>Accuracy</p>
+            <div class="accuracy">78%</div>
+            <div class="progress">
+                <div class="fill m3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

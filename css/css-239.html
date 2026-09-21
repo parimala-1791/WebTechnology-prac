@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 239 - SaaS API Usage</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .progress span {
+            display: block;
+            width: 68%;
+            height: 100%;
+            background: #4f46e5;
+            border-radius: 20px;
+        }
+
+        @media(max-width:700px) {
+            .cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>API Usage</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Total Requests</p>
+            <div class="number">842K</div>
+            <div class="progress"><span></span></div>
+        </div>
+
+        <div class="card">
+            <p>Successful</p>
+            <div class="number">821K</div>
+            <p>97.5%</p>
+        </div>
+
+        <div class="card">
+            <p>Errors</p>
+            <div class="number">21K</div>
+            <p>2.5%</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

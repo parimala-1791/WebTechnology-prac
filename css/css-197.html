@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 197 - SaaS Help Center</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.hero{text-align:center;background:#eff6ff;padding:70px}
+.hero h1{font-size:45px}
+input{width:500px;max-width:90%;padding:15px;border:1px solid #ddd;border-radius:8px}
+.categories{padding:50px 8%;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.category{background:white;padding:25px;border-radius:15px}
+.category h2{color:#2563eb}
+@media(max-width:700px){.categories{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<section class="hero">
+<h1>How can we help?</h1>
+<input type="search" placeholder="Search help articles...">
+</section>
+
+<section class="categories">
+<div class="category"><h2>Getting Started</h2><p>Learn the basics.</p></div>
+<div class="category"><h2>Account</h2><p>Manage your account.</p></div>
+<div class="category"><h2>Billing</h2><p>Learn about payments.</p></div>
+</section>
+
+</body>
+</html>

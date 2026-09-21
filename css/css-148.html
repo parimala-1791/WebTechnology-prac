@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 148 - Responsive Card Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 50px 8%;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #667085;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="text-align:center;">Responsive Cards</h1>
+
+<section class="grid">
+
+    <div class="card">
+        <h2>Analytics</h2>
+        <p>Track important business metrics.</p>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <p>Manage all your projects.</p>
+    </div>
+
+    <div class="card">
+        <h2>Team</h2>
+        <p>Collaborate with your team.</p>
+    </div>
+
+    <div class="card">
+        <h2>Reports</h2>
+        <p>Generate detailed reports.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

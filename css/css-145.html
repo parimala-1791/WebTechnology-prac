@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 145 - Cookie Banner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .banner {
+            position: fixed;
+            bottom: 20px;
+            left: 5%;
+            right: 5%;
+            background: #172033;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .banner p {
+            color: #cbd5e1;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+        }
+
+        @media(max-width: 600px) {
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="banner">
+
+    <div>
+        <h3>We use cookies</h3>
+        <p>
+            Cookies help us improve your experience.
+        </p>
+    </div>
+
+    <button>Accept</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 04 - Password Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        .box {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input {
+            display: block;
+            width: 90%;
+            padding: 12px;
+            margin: 12px auto;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Password Validation</h1>
+
+    <form id="passwordForm">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
+
+        <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm password"
+        >
+
+        <button type="submit">Validate</button>
+
+    </form>
+
+    <div id="message"></div>
+
+</div>
+
+<script>
+
+document.getElementById("passwordForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let password = document.getElementById("password").value;
+    let confirmPassword =
+        document.getElementById("confirmPassword").value;
+
+    let message = document.getElementById("message");
+
+    if (password.length < 8) {
+
+        message.innerHTML =
+            "Password must contain at least 8 characters.";
+        message.style.color = "red";
+
+    } else if (password !== confirmPassword) {
+
+        message.innerHTML =
+            "Passwords do not match.";
+        message.style.color = "red";
+
+    } else {
+
+        message.innerHTML =
+            "Password is valid and passwords match.";
+        message.style.color = "green";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

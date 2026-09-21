@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 223 - SaaS Project Overview</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            background: #dcfce7;
+            color: #166534;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .progress {
+            height: 12px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        .progress span {
+            display: block;
+            width: 72%;
+            height: 100%;
+            background: #4f46e5;
+            border-radius: 20px;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .detail {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        @media(max-width:650px) {
+            .details { grid-template-columns: 1fr; }
+            .top { flex-direction: column; align-items: flex-start; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="project">
+
+        <div class="top">
+            <h1>Website Redesign</h1>
+            <span class="status">In Progress</span>
+        </div>
+
+        <p>Complete redesign of the company website.</p>
+
+        <h3>Project Progress — 72%</h3>
+
+        <div class="progress">
+            <span></span>
+        </div>
+
+        <div class="details">
+
+            <div class="detail">
+                <strong>Start Date</strong>
+                <p>01 Sep 2026</p>
+            </div>
+
+            <div class="detail">
+                <strong>Deadline</strong>
+                <p>30 Sep 2026</p>
+            </div>
+
+            <div class="detail">
+                <strong>Tasks</strong>
+                <p>18 / 25 completed</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

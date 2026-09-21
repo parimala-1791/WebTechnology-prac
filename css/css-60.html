@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 60 - Timeline</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        .timeline {
+            width: 600px;
+            margin: 50px auto;
+            border-left: 4px solid #2563eb;
+            padding-left: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+        }
+
+        .event {
+            position: relative;
+            background: white;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #cbd5e1;
+        }
+
+        .event::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: #2563eb;
+            border-radius: 50%;
+            left: -41px;
+            top: 25px;
+        }
+
+        .event h2 {
+            color: #2563eb;
+        }
+
+        .event p {
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .timeline {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Project Timeline</h1>
+
+    <div class="timeline">
+
+        <div class="event">
+            <h2>2024</h2>
+            <p>Project idea was created.</p>
+        </div>
+
+        <div class="event">
+            <h2>2025</h2>
+            <p>Development and testing started.</p>
+        </div>
+
+        <div class="event">
+            <h2>2026</h2>
+            <p>Project was completed successfully.</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

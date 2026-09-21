@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 254 - SaaS Collaboration Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,.06);
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        @media(max-width:700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>Work Better Together</h1>
+
+    <p>
+        Collaborate with your team, manage projects
+        and share ideas from one platform.
+    </p>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <div class="icon">💬</div>
+        <h2>Team Chat</h2>
+        <p>Communicate with your team.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">📋</div>
+        <h2>Projects</h2>
+        <p>Manage projects efficiently.</p>
+    </div>
+
+    <div class="feature">
+        <div class="icon">📁</div>
+        <h2>Files</h2>
+        <p>Share files securely.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 72 - Comment Box</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .comment {
+            display: flex;
+            gap: 15px;
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #cbd5e1;
+        }
+
+        .avatar {
+            min-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .comment h3 {
+            margin: 0;
+            color: #172554;
+        }
+
+        .comment p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Comments</h1>
+
+        <div class="comment">
+            <div class="avatar">A</div>
+
+            <div>
+                <h3>Ananya</h3>
+                <p>
+                    This is a very useful and interesting project.
+                </p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="avatar">R</div>
+
+            <div>
+                <h3>Rahul</h3>
+                <p>
+                    I really like the clean design of this webpage.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

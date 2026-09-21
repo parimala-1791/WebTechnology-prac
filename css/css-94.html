@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 94 - Kanban Board</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-top: 35px;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .column {
+            background: #e2e8f0;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .column h2 {
+            color: #172554;
+        }
+
+        .task {
+            background: white;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cbd5e1;
+        }
+
+        .task h3 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+        .task p {
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .board {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Project Kanban Board</h1>
+
+    <div class="board">
+
+        <div class="column">
+            <h2>To Do</h2>
+
+            <div class="task">
+                <h3>Create Design</h3>
+                <p>Prepare website layout.</p>
+            </div>
+
+            <div class="task">
+                <h3>Collect Images</h3>
+                <p>Find required project images.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>In Progress</h2>
+
+            <div class="task">
+                <h3>Build Homepage</h3>
+                <p>Develop the main website page.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <h2>Completed</h2>
+
+            <div class="task">
+                <h3>Project Setup</h3>
+                <p>Folder structure completed.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

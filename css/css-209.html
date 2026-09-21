@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 209 - Analytics Table</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .table-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #f3f4f6;
+        }
+
+        .success {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        .danger {
+            color: #dc2626;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="table-container">
+
+    <h1>Analytics Report</h1>
+
+    <table>
+        <tr>
+            <th>Campaign</th>
+            <th>Visitors</th>
+            <th>Conversions</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Summer Sale</td>
+            <td>12,450</td>
+            <td>820</td>
+            <td class="success">Active</td>
+        </tr>
+
+        <tr>
+            <td>Product Launch</td>
+            <td>9,850</td>
+            <td>640</td>
+            <td class="success">Active</td>
+        </tr>
+
+        <tr>
+            <td>Email Campaign</td>
+            <td>5,240</td>
+            <td>210</td>
+            <td class="danger">Low</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

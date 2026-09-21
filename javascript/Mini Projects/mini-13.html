@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fefce8;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        textarea {
+            width: 90%;
+            height: 150px;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #ca8a04;
+            color: white;
+            cursor: pointer;
+        }
+
+        #savedNotes {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .note {
+            padding: 15px;
+            margin: 10px 0;
+            background: #fef9c3;
+            border-radius: 8px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #a16207;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Notes App</h1>
+
+    <textarea id="note" placeholder="Write your note..."></textarea>
+
+    <br>
+
+    <button onclick="saveNote()">Save Note</button>
+
+    <div id="savedNotes"></div>
+
+</div>
+
+<script>
+
+function saveNote() {
+
+    let note = document.getElementById("note").value.trim();
+
+    if (note === "") {
+        alert("Please write a note");
+        return;
+    }
+
+    let noteElement = document.createElement("div");
+
+    noteElement.className = "note";
+
+    noteElement.innerHTML =
+        note +
+        "<br><button onclick='this.parentElement.remove()'>Delete</button>";
+
+    document.getElementById("savedNotes").appendChild(noteElement);
+
+    document.getElementById("note").value = "";
+}
+
+</script>
+
+</body>
+</html>

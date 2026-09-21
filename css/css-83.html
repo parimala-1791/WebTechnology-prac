@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 83 - Responsive Card Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Card Grid</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Structure your webpages using HTML.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Style your webpages using CSS.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Add functionality using JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h2>Python</h2>
+            <p>Build applications using Python.</p>
+        </div>
+
+        <div class="card">
+            <h2>Data Science</h2>
+            <p>Analyze data and discover insights.</p>
+        </div>
+
+        <div class="card">
+            <h2>AI</h2>
+            <p>Explore artificial intelligence.</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

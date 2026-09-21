@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 212 - Sales Analytics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .dashboard {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 20px;
+        }
+
+        .progress div {
+            width: 82%;
+            height: 100%;
+            background: #4f46e5;
+            border-radius: 20px;
+        }
+
+        @media(max-width:700px) {
+            .summary {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="dashboard">
+
+    <h1>Sales Analytics</h1>
+
+    <div class="summary">
+
+        <div class="box">
+            <p>Total Sales</p>
+            <div class="number">$42,850</div>
+            <p>82% of target</p>
+            <div class="progress">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <p>Orders</p>
+            <div class="number">1,284</div>
+            <p>+15% this month</p>
+        </div>
+
+        <div class="box">
+            <p>Average Order</p>
+            <div class="number">$184</div>
+            <p>+8% this month</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

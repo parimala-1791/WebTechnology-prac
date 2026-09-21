@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Storage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        input {
+            padding: 12px;
+            width: 80%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 10px 18px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            background: #7c3aed;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5b21b6;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #7c3aed;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to JavaScript Programs</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Session Storage</h1>
+
+        <p>Enter a message:</p>
+
+        <input type="text" id="message" placeholder="Enter a message">
+
+        <br>
+
+        <button onclick="saveMessage()">Save</button>
+        <button onclick="getMessage()">Get Message</button>
+        <button onclick="removeMessage()">Remove</button>
+
+        <div id="output"></div>
+
+    </div>
+
+    <script>
+
+        function saveMessage() {
+            let message = document.getElementById("message").value;
+
+            if (message === "") {
+                alert("Please enter a message");
+                return;
+            }
+
+            sessionStorage.setItem("message", message);
+
+            document.getElementById("output").innerHTML =
+                "Message saved for this session!";
+        }
+
+        function getMessage() {
+            let message = sessionStorage.getItem("message");
+
+            if (message) {
+                document.getElementById("output").innerHTML =
+                    "Stored Message: " + message;
+            } else {
+                document.getElementById("output").innerHTML =
+                    "No message found.";
+            }
+        }
+
+        function removeMessage() {
+            sessionStorage.removeItem("message");
+
+            document.getElementById("output").innerHTML =
+                "Message removed!";
+        }
+
+    </script>
+
+</body>
+</html>

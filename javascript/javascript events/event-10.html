@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 10 - Event Listener</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 8px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+            background: #eff6ff;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Event Listener</h1>
+
+    <button id="button1">Button 1</button>
+
+    <button id="button2">Button 2</button>
+
+    <div id="result">
+        Click a button.
+    </div>
+
+</div>
+
+<script>
+
+let result = document.getElementById("result");
+
+document.getElementById("button1").addEventListener("click", function() {
+
+    result.textContent = "You clicked Button 1.";
+
+});
+
+document.getElementById("button2").addEventListener("click", function() {
+
+    result.textContent = "You clicked Button 2.";
+
+});
+
+</script>
+
+</body>
+</html>

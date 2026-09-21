@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 165 - Data Science Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .dashboard {
+            padding: 40px 8%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .card h2 {
+            color: #2563eb;
+            font-size: 32px;
+        }
+
+        .chart {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .line {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .point {
+            width: 18px;
+            height: 18px;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+
+    <h1>Data Science Dashboard</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Datasets</p>
+            <h2>125</h2>
+        </div>
+
+        <div class="card">
+            <p>Models</p>
+            <h2>38</h2>
+        </div>
+
+        <div class="card">
+            <p>Accuracy</p>
+            <h2>94%</h2>
+        </div>
+
+    </div>
+
+    <div class="chart">
+        <h2>Model Performance</h2>
+
+        <div class="line">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

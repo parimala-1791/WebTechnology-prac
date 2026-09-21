@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 156 - Team Collaboration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .team {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+        }
+
+        .member p {
+            color: #667085;
+        }
+
+        .online {
+            margin-left: auto;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="team">
+
+    <h1>Team Members</h1>
+
+    <div class="member">
+        <div class="avatar">👩</div>
+        <div>
+            <strong>Priya</strong>
+            <p>UI Designer</p>
+        </div>
+        <span class="online">● Online</span>
+    </div>
+
+    <div class="member">
+        <div class="avatar">👨</div>
+        <div>
+            <strong>Rahul</strong>
+            <p>Developer</p>
+        </div>
+        <span class="online">● Online</span>
+    </div>
+
+    <div class="member">
+        <div class="avatar">👩</div>
+        <div>
+            <strong>Ananya</strong>
+            <p>Data Analyst</p>
+        </div>
+        <span class="online">● Online</span>
+    </div>
+
+</div>
+
+</body>
+</html>

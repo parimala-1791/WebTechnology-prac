@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 222 - SaaS Team Workspace</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .workspace {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .member {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.06);
+        }
+
+        .avatar {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background: #4f46e5;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .online {
+            color: #16a34a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="workspace">
+
+    <h1>Team Workspace</h1>
+
+    <div class="members">
+
+        <div class="member">
+            <div class="avatar">AJ</div>
+            <h2>Alex Johnson</h2>
+            <p>Developer</p>
+            <p class="online">● Online</p>
+        </div>
+
+        <div class="member">
+            <div class="avatar">SM</div>
+            <h2>Sarah Miller</h2>
+            <p>Designer</p>
+            <p class="online">● Online</p>
+        </div>
+
+        <div class="member">
+            <div class="avatar">RK</div>
+            <h2>Ryan Kumar</h2>
+            <p>Manager</p>
+            <p>● Offline</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

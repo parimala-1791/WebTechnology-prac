@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 105 - Team Cards</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 8%;
+        }
+
+        .member {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #dbeafe;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        .member h3 {
+            color: #172033;
+        }
+
+        .member p {
+            color: #667085;
+        }
+
+        @media(max-width: 900px) {
+            .team {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .team {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<header>
+    <h1>Meet Our Team</h1>
+</header>
+
+<section class="team">
+
+    <div class="member">
+        <div class="avatar">👩</div>
+        <h3>Ananya</h3>
+        <p>UI Designer</p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">👨</div>
+        <h3>Rahul</h3>
+        <p>Developer</p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">👩</div>
+        <h3>Priya</h3>
+        <p>Product Manager</p>
+    </div>
+
+    <div class="member">
+        <div class="avatar">👨</div>
+        <h3>Arjun</h3>
+        <p>Data Analyst</p>
+    </div>
+
+</section>
+
+</body>
+</html>

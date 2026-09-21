@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 256 - SaaS Data Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            color: #172033;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: #eef2ff;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            line-height: 1.7;
+        }
+
+        .features {
+            padding: 60px 8%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+        }
+
+        .feature h2 {
+            color: #4f46e5;
+        }
+
+        @media(max-width:700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>Modern Data Platform</h1>
+
+    <p>
+        Collect, process and analyze your data
+        using one powerful cloud platform.
+    </p>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>Collect</h2>
+        <p>Connect data from multiple sources.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Process</h2>
+        <p>Transform raw data into useful information.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Analyze</h2>
+        <p>Discover insights using analytics.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

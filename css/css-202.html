@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 202 - AI Chat Interface</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef1f7;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .chat {
+            width: 90%;
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        }
+
+        .header {
+            background: #4f46e5;
+            color: white;
+            padding: 20px;
+        }
+
+        .messages {
+            padding: 25px;
+        }
+
+        .message {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 12px;
+            max-width: 75%;
+        }
+
+        .user {
+            background: #e0e7ff;
+            margin-left: auto;
+        }
+
+        .bot {
+            background: #f3f4f6;
+        }
+
+        .input {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-left: 10px;
+            padding: 12px 20px;
+            border: none;
+            background: #4f46e5;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="chat">
+
+    <div class="header">
+        <h2>AI Assistant</h2>
+        <p>Online</p>
+    </div>
+
+    <div class="messages">
+        <div class="message bot">
+            Hello! How can I help you today?
+        </div>
+
+        <div class="message user">
+            Show me my analytics.
+        </div>
+
+        <div class="message bot">
+            Your monthly performance increased by 18%.
+        </div>
+    </div>
+
+    <div class="input">
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>

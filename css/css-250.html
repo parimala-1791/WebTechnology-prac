@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 250 - SaaS Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            color: #172033;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: #eef2ff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .projects {
+            padding: 60px 8%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .project {
+            padding: 30px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+        }
+
+        .project:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+            transform: translateY(-5px);
+        }
+
+        @media(max-width:700px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>My SaaS Portfolio</h1>
+
+    <p>
+        A collection of modern web and SaaS projects.
+    </p>
+
+</section>
+
+<section class="projects">
+
+    <div class="project">
+        <h2>Analytics Dashboard</h2>
+        <p>Modern business analytics interface.</p>
+    </div>
+
+    <div class="project">
+        <h2>AI Dashboard</h2>
+        <p>AI-powered dashboard design.</p>
+    </div>
+
+    <div class="project">
+        <h2>Project Manager</h2>
+        <p>Team project management platform.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 119 - Settings Panel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        .settings {
+            width: 90%;
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .setting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .setting p {
+            color: #667085;
+        }
+
+        .toggle {
+            width: 50px;
+            height: 26px;
+            background: #2563eb;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .toggle::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="settings">
+
+    <h1>Settings</h1>
+
+    <div class="setting">
+        <div>
+            <strong>Email Notifications</strong>
+            <p>Receive updates through email.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+    <div class="setting">
+        <div>
+            <strong>Dark Mode</strong>
+            <p>Change the appearance of the dashboard.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+    <div class="setting">
+        <div>
+            <strong>Automatic Updates</strong>
+            <p>Keep your application updated.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

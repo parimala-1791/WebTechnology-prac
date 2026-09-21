@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 129 - Project Card Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .projects {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h2 {
+            color: #2563eb;
+        }
+
+        .project p {
+            color: #667085;
+            line-height: 1.6;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        @media(max-width: 800px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="text-align:center;">My Projects</h1>
+
+<section class="projects">
+
+    <div class="project">
+        <h2>Portfolio</h2>
+        <p>Personal portfolio website.</p>
+        <span class="tag">HTML/CSS</span>
+    </div>
+
+    <div class="project">
+        <h2>Dashboard</h2>
+        <p>Analytics dashboard interface.</p>
+        <span class="tag">CSS</span>
+    </div>
+
+    <div class="project">
+        <h2>Data App</h2>
+        <p>Application for visualizing data.</p>
+        <span class="tag">Python</span>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 149 - Responsive Navigation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: #f5f7fb;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            background: #eff6ff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        @media(max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<nav>
+
+    <h2>CloudApp</h2>
+
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Responsive Navigation</h1>
+
+    <p>
+        Resize the browser window to see the responsive design.
+    </p>
+
+</section>
+
+</body>
+</html>

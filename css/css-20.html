@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 20 - Variables</title>
+
+    <style>
+
+        :root {
+            --primary-color: #172554;
+            --secondary-color: #2563eb;
+            --light-color: #dbeafe;
+            --text-color: #222;
+            --spacing: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .card {
+            background: var(--light-color);
+            border: 2px solid var(--secondary-color);
+            padding: var(--spacing);
+            margin: var(--spacing) 0;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Variables</h1>
+    <p>Using reusable custom CSS properties</p>
+</header>
+
+<div class="content">
+
+    <div class="card">
+
+        <h2>Reusable Values</h2>
+
+        <p>
+            CSS variables allow us to store values such as
+            colors, spacing and sizes and reuse them throughout
+            the stylesheet.
+        </p>
+
+        <a href="#" class="button">
+            Example Button
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Advantages</h2>
+
+        <p>
+            Changing the value of a variable can update
+            multiple elements at the same time.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="navigation">
+
+    <a href="../index.html">Home</a>
+
+    <a href="index.html">
+        Back to CSS Programs
+    </a>
+
+</div>
+
+</body>
+</html>

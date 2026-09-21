@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 179 - KPI Analytics</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.kpis{padding:50px 8%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.kpi{background:white;padding:25px;border-radius:15px}
+.kpi h2{font-size:35px;color:#2563eb}
+.kpi span{color:green}
+@media(max-width:800px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="text-align:center">Key Metrics</h1>
+
+<div class="kpis">
+<div class="kpi"><p>Revenue</p><h2>$95K</h2><span>↑ 18%</span></div>
+<div class="kpi"><p>Users</p><h2>25K</h2><span>↑ 15%</span></div>
+<div class="kpi"><p>Orders</p><h2>6.2K</h2><span>↑ 12%</span></div>
+<div class="kpi"><p>Retention</p><h2>82%</h2><span>↑ 7%</span></div>
+</div>
+
+</body>
+</html>

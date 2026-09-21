@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 122 - SaaS Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        nav h2 {
+            color: #2563eb;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #eff6ff;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+        }
+
+        .hero span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+            color: #667085;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .navigation {
+            padding: 20px;
+        }
+
+        .navigation a {
+            color: #2563eb;
+            margin-right: 20px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<nav>
+    <h2>FlowDesk</h2>
+
+    <div>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Manage Your Work <span>Smarter</span></h1>
+
+    <p>
+        FlowDesk helps teams organize projects, track performance
+        and improve productivity from one powerful platform.
+    </p>
+
+    <a class="btn" href="#">Start Free</a>
+</section>
+
+</body>
+</html>

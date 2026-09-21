@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 259 - SaaS Mobile App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 8%;
+            gap: 50px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .phone {
+            width: 250px;
+            height: 480px;
+            background: #111827;
+            border-radius: 35px;
+            padding: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,.2);
+        }
+
+        .screen {
+            background: white;
+            height: 100%;
+            border-radius: 25px;
+            padding: 25px;
+        }
+
+        .screen h2 {
+            color: #4f46e5;
+        }
+
+        button {
+            padding: 14px 25px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        @media(max-width:700px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <div>
+        <h1>Your Business Anywhere</h1>
+
+        <p>
+            Manage your business from your mobile device.
+        </p>
+
+        <button>Download App</button>
+    </div>
+
+    <div class="phone">
+
+        <div class="screen">
+
+            <h2>Dashboard</h2>
+
+            <p>Revenue</p>
+            <h1>$12,450</h1>
+
+            <p>Customers</p>
+            <h2>2,840</h2>
+
+            <p>Growth</p>
+            <h2>+18%</h2>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

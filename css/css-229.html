@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 229 - SaaS Help Center</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            background: #4f46e5;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .search {
+            width: 90%;
+            max-width: 600px;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .categories {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,.06);
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>How can we help?</h1>
+    <p>Search our knowledge base.</p>
+
+    <input class="search" placeholder="Search for an article...">
+
+</section>
+
+<div class="categories">
+
+    <div class="category">
+        <h2>Getting Started</h2>
+        <p>Learn how to create your account.</p>
+    </div>
+
+    <div class="category">
+        <h2>Account</h2>
+        <p>Manage your account and profile.</p>
+    </div>
+
+    <div class="category">
+        <h2>Billing</h2>
+        <p>Questions about payments and plans.</p>
+    </div>
+
+    <div class="category">
+        <h2>Security</h2>
+        <p>Keep your account protected.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

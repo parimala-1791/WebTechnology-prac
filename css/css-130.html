@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 130 - Responsive Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        nav {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            background: white;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navigation {
+            padding: 15px 8%;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: #eff6ff;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero span {
+            color: #2563eb;
+        }
+
+        .projects {
+            padding: 50px 8%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project {
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        @media(max-width: 700px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<nav>
+    <strong>Portfolio</strong>
+
+    <div>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Hello, I'm <span>Parimala</span></h1>
+    <p>Computing and Data Science Student</p>
+</section>
+
+<section class="projects">
+
+    <div class="project">
+        <h2>Portfolio Website</h2>
+        <p>Modern responsive portfolio.</p>
+    </div>
+
+    <div class="project">
+        <h2>Data Analysis</h2>
+        <p>Data visualization project.</p>
+    </div>
+
+    <div class="project">
+        <h2>Web Application</h2>
+        <p>Interactive web application.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

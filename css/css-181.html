@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 181 - SaaS User Analytics</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.dashboard{padding:40px 8%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:15px}
+.card h2{color:#2563eb;font-size:32px}
+.graph{height:180px;background:#eff6ff;margin-top:25px;border-radius:15px;padding:25px}
+.line{height:5px;background:#2563eb;margin-top:100px;transform:rotate(-5deg)}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+<h1>User Analytics</h1>
+
+<div class="stats">
+<div class="card"><p>Daily Users</p><h2>8,450</h2></div>
+<div class="card"><p>New Users</p><h2>1,240</h2></div>
+<div class="card"><p>Returning Users</p><h2>5,680</h2></div>
+</div>
+
+<div class="graph">
+<h2>User Growth</h2>
+<div class="line"></div>
+</div>
+</div>
+
+</body>
+</html>

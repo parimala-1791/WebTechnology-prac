@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 237 - SaaS User Management</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #f3f4f6;
+        }
+
+        .active {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        .admin {
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+
+        @media(max-width:650px) {
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>User Management</h1>
+
+    <table>
+
+        <tr>
+            <th>User</th>
+            <th>Role</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Alex Johnson</td>
+            <td><span class="admin">Admin</span></td>
+            <td class="active">Active</td>
+        </tr>
+
+        <tr>
+            <td>Sarah Miller</td>
+            <td>Designer</td>
+            <td class="active">Active</td>
+        </tr>
+
+        <tr>
+            <td>Ryan Kumar</td>
+            <td>Developer</td>
+            <td>Offline</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

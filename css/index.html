@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Practical Programs - 1 to 270</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #172554;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            color: #dbeafe;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .category h2 {
+            color: #172554;
+            border-left: 6px solid #2563eb;
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        .programs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .program {
+            display: block;
+            background: white;
+            padding: 18px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #172554;
+            box-shadow: 0 3px 10px #cbd5e1;
+            transition: 0.3s;
+        }
+
+        .program:hover {
+            transform: translateY(-5px);
+            background: #dbeafe;
+        }
+
+        .number {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .title {
+            margin-top: 8px;
+            font-size: 15px;
+        }
+
+        .heading-card {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .heading-card h3 {
+            margin: 0;
+        }
+
+        .home {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .home a {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .home a:hover {
+            background: #172554;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 950px) {
+            .programs {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .programs {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .programs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Practical Programs</h1>
+    <p>CSS Programs 01 - 270</p>
+</header>
+
+<div class="container">
+
+    <!-- 01 - 35 -->
+    <section class="category">
+
+        <h2>CSS Foundation & Core UI — 01 to 35</h2>
+
+        <div class="programs">
+
+            <a class="program" href="css-01.html">
+                <div class="number">CSS 01</div>
+                <div class="title">Inline CSS</div>
+            </a>
+
+            <a class="program" href="css-02.html">
+                <div class="number">CSS 02</div>
+                <div class="title">Internal CSS</div>
+            </a>
+
+            <a class="program" href="css-03.html">
+                <div class="number">CSS 03</div>
+                <div class="title">External CSS</div>
+            </a>
+
+            <a class="program" href="css-04.html">
+                <div class="number">CSS 04</div>
+                <div class="title">CSS Selectors</div>
+            </a>
+
+            <a class="program" href="css-05.html">
+                <div class="number">CSS 05</div>
+                <div class="title">CSS Combinators</div>
+            </a>
+
+            <a class="program" href="css-06.html">
+                <div class="number">CSS 06</div>
+                <div class="title">CSS Colors</div>
+            </a>
+
+            <a class="program" href="css-07.html">
+                <div class="number">CSS 07</div>
+                <div class="title">CSS Backgrounds</div>
+            </a>
+
+            <a class="program" href="css-08.html">
+                <div class="number">CSS 08</div>
+                <div class="title">CSS Borders</div>
+            </a>
+
+            <a class="program" href="css-09.html">
+                <div class="number">CSS 09</div>
+                <div class="title">CSS Gradients</div>
+            </a>
+
+            <a class="program" href="css-10.html">
+                <div class="number">CSS 10</div>
+                <div class="title">CSS Fonts</div>
+            </a>
+
+            <a class="program" href="css-11.html">
+                <div class="number">CSS 11</div>
+                <div class="title">Text Properties</div>
+            </a>
+
+            <a class="program" href="css-12.html">
+                <div class="number">CSS 12</div>
+                <div class="title">Box Model</div>
+            </a>
+
+            <a class="program" href="css-13.html">
+                <div class="number">CSS 13</div>
+                <div class="title">Width, Height & Dimensions</div>
+            </a>
+
+            <a class="program" href="css-14.html">
+                <div class="number">CSS 14</div>
+                <div class="title">Box Sizing</div>
+            </a>
+
+            <a class="program" href="css-15.html">
+                <div class="number">CSS 15</div>
+                <div class="title">Display Property</div>
+            </a>
+
+            <a class="program" href="css-16.html">
+                <div class="number">CSS 16</div>
+                <div class="title">Visibility & Opacity</div>
+            </a>
+
+            <a class="program" href="css-17.html">
+                <div class="number">CSS 17</div>
+                <div class="title">Overflow</div>
+            </a>
+
+            <a class="program" href="css-18.html">
+                <div class="number">CSS 18</div>
+                <div class="title">Border Radius</div>
+            </a>
+
+            <a class="program" href="css-19.html">
+                <div class="number">CSS 19</div>
+                <div class="title">Box Shadow</div>
+            </a>
+
+            <a class="program" href="css-20.html">
+                <div class="number">CSS 20</div>
+                <div class="title">CSS Variables</div>
+            </a>
+
+            <a class="program" href="css-21.html">
+                <div class="number">CSS 21</div>
+                <div class="title">Inheritance, Specificity & Cascade</div>
+            </a>
+
+            <a class="program" href="css-22.html">
+                <div class="number">CSS 22</div>
+                <div class="title">calc(), min(), max(), clamp()</div>
+            </a>
+
+            <a class="program" href="css-23.html">
+                <div class="number">CSS 23</div>
+                <div class="title">CSS Positioning</div>
+            </a>
+
+            <a class="program" href="css-24.html">
+                <div class="number">CSS 24</div>
+                <div class="title">z-index</div>
+            </a>
+
+            <a class="program" href="css-25.html">
+                <div class="number">CSS 25</div>
+                <div class="title">Float & Clear</div>
+            </a>
+
+            <a class="program" href="css-26.html">
+                <div class="number">CSS 26</div>
+                <div class="title">Cursor Property</div>
+            </a>
+
+            <a class="program" href="css-27.html">
+                <div class="number">CSS 27</div>
+                <div class="title">Outline Property</div>
+            </a>
+
+            <a class="program" href="css-28.html">
+                <div class="number">CSS 28</div>
+                <div class="title">Spacing Properties</div>
+            </a>
+
+            <a class="program" href="css-29.html">
+                <div class="number">CSS 29</div>
+                <div class="title">CSS Units</div>
+            </a>
+
+            <a class="program" href="css-30.html">
+                <div class="number">CSS 30</div>
+                <div class="title">object-fit</div>
+            </a>
+
+            <a class="program" href="css-31.html">
+                <div class="number">CSS 31</div>
+                <div class="title">CSS Filters</div>
+            </a>
+
+            <a class="program" href="css-32.html">
+                <div class="number">CSS 32</div>
+                <div class="title">CSS Transitions</div>
+            </a>
+
+            <a class="program" href="css-33.html">
+                <div class="number">CSS 33</div>
+                <div class="title">2D Transforms</div>
+            </a>
+
+            <a class="program" href="css-34.html">
+                <div class="number">CSS 34</div>
+                <div class="title">3D Transforms</div>
+            </a>
+
+            <a class="program" href="css-35.html">
+                <div class="number">CSS 35</div>
+                <div class="title">CSS Animations & Spinner</div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- 36 - 70 -->
+    <section class="category">
+
+        <h2>SaaS UI Components — 36 to 70</h2>
+
+        <div class="programs">
+
+            <a class="program" href="css-36.html">
+                <div class="number">CSS 36</div>
+                <div class="title">Navigation Bar</div>
+            </a>
+
+            <a class="program" href="css-37.html">
+                <div class="number">CSS 37</div>
+                <div class="title">Hero Section</div>
+            </a>
+
+            <a class="program" href="css-38.html">
+                <div class="number">CSS 38</div>
+                <div class="title">Feature Cards</div>
+            </a>
+
+            <a class="program" href="css-39.html">
+                <div class="number">CSS 39</div>
+                <div class="title">Pricing Cards</div>
+            </a>
+
+            <a class="program" href="css-40.html">
+                <div class="number">CSS 40</div>
+                <div class="title">Login Form</div>
+            </a>
+
+            <a class="program" href="css-41.html">
+                <div class="number">CSS 41</div>
+                <div class="title">Signup Form</div>
+            </a>
+
+            <a class="program" href="css-42.html">
+                <div class="number">CSS 42</div>
+                <div class="title">Contact Form</div>
+            </a>
+
+            <a class="program" href="css-43.html">
+                <div class="number">CSS 43</div>
+                <div class="title">Alert Messages</div>
+            </a>
+
+            <a class="program" href="css-44.html">
+                <div class="number">CSS 44</div>
+                <div class="title">Modal / Popup</div>
+            </a>
+
+            <a class="program" href="css-45.html">
+                <div class="number">CSS 45</div>
+                <div class="title">Accordion / FAQ</div>
+            </a>
+
+            <a class="program" href="css-46.html">
+                <div class="number">CSS 46</div>
+                <div class="title">Tabs</div>
+            </a>
+
+            <a class="program" href="css-47.html">
+                <div class="number">CSS 47</div>
+                <div class="title">Breadcrumbs</div>
+            </a>
+
+            <a class="program" href="css-48.html">
+                <div class="number">CSS 48</div>
+                <div class="title">Pagination</div>
+            </a>
+
+            <a class="program" href="css-49.html">
+                <div class="number">CSS 49</div>
+                <div class="title">Badges</div>
+            </a>
+
+            <a class="program" href="css-50.html">
+                <div class="number">CSS 50</div>
+                <div class="title">Tooltips</div>
+            </a>
+
+            <a class="program" href="css-51.html">
+                <div class="number">CSS 51</div>
+                <div class="title">Dropdown Menu</div>
+            </a>
+
+            <a class="program" href="css-52.html">
+                <div class="number">CSS 52</div>
+                <div class="title">Search Bar</div>
+            </a>
+
+            <a class="program" href="css-53.html">
+                <div class="number">CSS 53</div>
+                <div class="title">Profile Card</div>
+            </a>
+
+            <a class="program" href="css-54.html">
+                <div class="number">CSS 54</div>
+                <div class="title">Testimonial Card</div>
+            </a>
+
+            <a class="program" href="css-55.html">
+                <div class="number">CSS 55</div>
+                <div class="title">Team Member Cards</div>
+            </a>
+
+            <a class="program" href="css-56.html">
+                <div class="number">CSS 56</div>
+                <div class="title">Notification Component</div>
+            </a>
+
+            <a class="program" href="css-57.html">
+                <div class="number">CSS 57</div>
+                <div class="title">Progress Bar</div>
+            </a>
+
+            <a class="program" href="css-58.html">
+                <div class="number">CSS 58</div>
+                <div class="title">Loading Component</div>
+            </a>
+
+            <a class="program" href="css-59.html">
+                <div class="number">CSS 59</div>
+                <div class="title">Skeleton Loader</div>
+            </a>
+
+            <a class="program" href="css-60.html">
+                <div class="number">CSS 60</div>
+                <div class="title">Timeline</div>
+            </a>
+
+            <a class="program" href="css-61.html">
+                <div class="number">CSS 61</div>
+                <div class="title">Stepper</div>
+            </a>
+
+            <a class="program" href="css-62.html">
+                <div class="number">CSS 62</div>
+                <div class="title">Chip Component</div>
+            </a>
+
+            <a class="program" href="css-63.html">
+                <div class="number">CSS 63</div>
+                <div class="title">Avatar Group</div>
+            </a>
+
+            <a class="program" href="css-64.html">
+                <div class="number">CSS 64</div>
+                <div class="title">Stats Card</div>
+            </a>
+
+            <a class="program" href="css-65.html">
+                <div class="number">CSS 65</div>
+                <div class="title">Dashboard Card</div>
+            </a>
+
+            <a class="program" href="css-66.html">
+                <div class="number">CSS 66</div>
+                <div class="title">Notification Badge</div>
+            </a>
+
+            <a class="program" href="css-67.html">
+                <div class="number">CSS 67</div>
+                <div class="title">Profile Header</div>
+            </a>
+
+            <a class="program" href="css-68.html">
+                <div class="number">CSS 68</div>
+                <div class="title">Image Card</div>
+            </a>
+
+            <a class="program" href="css-69.html">
+                <div class="number">CSS 69</div>
+                <div class="title">Product Card</div>
+            </a>
+
+            <a class="program" href="css-70.html">
+                <div class="number">CSS 70</div>
+                <div class="title">Blog Card</div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- 71 - 100 -->
+    <section class="category">
+
+        <h2>Advanced UI, Responsive & Analytics — 71 to 100</h2>
+
+        <div class="programs">
+
+            <a class="program" href="css-71.html">
+                <div class="number">CSS 71</div>
+                <div class="title">Notification Center</div>
+            </a>
+
+            <a class="program" href="css-72.html">
+                <div class="number">CSS 72</div>
+                <div class="title">Comment Box</div>
+            </a>
+
+            <a class="program" href="css-73.html">
+                <div class="number">CSS 73</div>
+                <div class="title">Chat Message</div>
+            </a>
+
+            <a class="program" href="css-74.html">
+                <div class="number">CSS 74</div>
+                <div class="title">User List</div>
+            </a>
+
+            <a class="program" href="css-75.html">
+                <div class="number">CSS 75</div>
+                <div class="title">File Upload Card</div>
+            </a>
+
+            <a class="program" href="css-76.html">
+                <div class="number">CSS 76</div>
+                <div class="title">Empty State</div>
+            </a>
+
+            <a class="program" href="css-77.html">
+                <div class="number">CSS 77</div>
+                <div class="title">Confirmation Card</div>
+            </a>
+
+            <a class="program" href="css-78.html">
+                <div class="number">CSS 78</div>
+                <div class="title">Error Page</div>
+            </a>
+
+            <a class="program" href="css-79.html">
+                <div class="number">CSS 79</div>
+                <div class="title">Maintenance Page</div>
+            </a>
+
+            <a class="program" href="css-80.html">
+                <div class="number">CSS 80</div>
+                <div class="title">Cookie Banner</div>
+            </a>
+
+            <a class="program" href="css-81.html">
+                <div class="number">CSS 81</div>
+                <div class="title">Rating Stars</div>
+            </a>
+
+            <a class="program" href="css-82.html">
+                <div class="number">CSS 82</div>
+                <div class="title">Price Comparison</div>
+            </a>
+
+            <a class="program" href="css-83.html">
+                <div class="number">CSS 83</div>
+                <div class="title">Responsive Card Grid</div>
+            </a>
+
+            <a class="program" href="css-84.html">
+                <div class="number">CSS 84</div>
+                <div class="title">Responsive Navigation</div>
+            </a>
+
+            <a class="program" href="css-85.html">
+                <div class="number">CSS 85</div>
+                <div class="title">Responsive Dashboard</div>
+            </a>
+
+            <a class="program" href="css-86.html">
+                <div class="number">CSS 86</div>
+                <div class="title">Sidebar Navigation</div>
+            </a>
+
+            <a class="program" href="css-87.html">
+                <div class="number">CSS 87</div>
+                <div class="title">Top Navigation Bar</div>
+            </a>
+
+            <a class="program" href="css-88.html">
+                <div class="number">CSS 88</div>
+                <div class="title">Analytics Cards</div>
+            </a>
+
+            <a class="program" href="css-89.html">
+                <div class="number">CSS 89</div>
+                <div class="title">Bar Chart Using CSS</div>
+            </a>
+
+            <a class="program" href="css-90.html">
+                <div class="number">CSS 90</div>
+                <div class="title">Donut Chart</div>
+            </a>
+
+            <a class="program" href="css-91.html">
+                <div class="number">CSS 91</div>
+                <div class="title">KPI Card</div>
+            </a>
+
+            <a class="program" href="css-92.html">
+                <div class="number">CSS 92</div>
+                <div class="title">Activity Feed</div>
+            </a>
+
+            <a class="program" href="css-93.html">
+                <div class="number">CSS 93</div>
+                <div class="title">Data Table</div>
+            </a>
+
+            <a class="program" href="css-94.html">
+                <div class="number">CSS 94</div>
+                <div class="title">Kanban Board</div>
+            </a>
+
+            <a class="program" href="css-95.html">
+                <div class="number">CSS 95</div>
+                <div class="title">Calendar UI</div>
+            </a>
+
+            <a class="program" href="css-96.html">
+                <div class="number">CSS 96</div>
+                <div class="title">Settings Panel</div>
+            </a>
+
+            <a class="program" href="css-97.html">
+                <div class="number">CSS 97</div>
+                <div class="title">Profile Settings Form</div>
+            </a>
+
+            <a class="program" href="css-98.html">
+                <div class="number">CSS 98</div>
+                <div class="title">Admin Dashboard</div>
+            </a>
+
+            <a class="program" href="css-99.html">
+                <div class="number">CSS 99</div>
+                <div class="title">SaaS Landing Section</div>
+            </a>
+
+            <a class="program" href="css-100.html">
+                <div class="number">CSS 100</div>
+                <div class="title">Complete SaaS Dashboard</div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- 101 - 246 -->
+    <section class="category">
+
+        <h2>Modern SaaS, Analytics, AI/ML & Responsive UI — 101 to 246</h2>
+
+        <div class="programs">
+
+            <!-- These files will be created as we continue -->
+
+            <script>
+                for (let i = 101; i <= 246; i++) {
+                    document.write(`
+                        <a class="program" href="css-${i}.html">
+                            <div class="number">CSS ${i}</div>
+                            <div class="title">
+                                CSS Practical Program ${i}
+                            </div>
+                        </a>
+                    `);
+                }
+            </script>
+
+        </div>
+    </section>
+
+
+    <!-- 247 HEADING -->
+    <section class="category">
+
+        <div class="heading-card">
+
+            <h3>
+                247 — Final SaaS Webpage Projects
+            </h3>
+
+            <p>
+                Final project section for advanced SaaS,
+                dashboard, analytics and responsive webpage designs.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- 248 - 270 -->
+    <section class="category">
+
+        <h2>Final SaaS Webpage Projects — 248 to 270</h2>
+
+        <div class="programs">
+
+            <script>
+                for (let i = 248; i <= 270; i++) {
+                    document.write(`
+                        <a class="program" href="css-${i}.html">
+                            <div class="number">CSS ${i}</div>
+                            <div class="title">
+                                Final SaaS Webpage Project ${i}
+                            </div>
+                        </a>
+                    `);
+                }
+            </script>
+
+        </div>
+
+    </section>
+
+
+    <div class="home">
+        <a href="../index.html">
+            ← Back to Main Dashboard
+        </a>
+    </div>
+
+</div>
+
+
+<footer>
+    <p>
+        CSS Practical Programs | CSS 01 - CSS 270
+    </p>
+</footer>
+
+</body>
+</html>

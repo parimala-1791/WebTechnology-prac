@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 87 - Top Navigation Bar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        .topbar {
+            background: white;
+            padding: 18px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px #cbd5e1;
+        }
+
+        .logo {
+            color: #172554;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #475569;
+        }
+
+        .menu a:hover {
+            color: #2563eb;
+        }
+
+        .profile {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .content h1 {
+            color: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 650px) {
+            .topbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar">
+
+        <div class="logo">SaaSApp</div>
+
+        <div class="menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Reports</a>
+        </div>
+
+        <div class="profile">P</div>
+
+    </div>
+
+    <div class="content">
+        <h1>Top Navigation Bar</h1>
+        <p>A simple modern top navigation component.</p>
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

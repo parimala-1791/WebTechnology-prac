@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 09 - Image Manipulation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 650px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px;
+            transition: 0.3s;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Image Manipulation</h1>
+
+    <img id="image"
+         src="https://images.unsplash.com/photo-1500534623283-312aade485b7"
+         alt="Nature">
+
+    <br>
+
+    <button onclick="changeSize()">Change Size</button>
+
+    <button onclick="rotateImage()">Rotate</button>
+
+</div>
+
+<script>
+
+function changeSize() {
+
+    let image = document.getElementById("image");
+
+    image.style.width = "400px";
+    image.style.height = "250px";
+
+}
+
+function rotateImage() {
+
+    let image = document.getElementById("image");
+
+    image.style.transform = "rotate(5deg)";
+
+}
+
+</script>
+
+</body>
+</html>

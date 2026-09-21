@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 135 - Contact Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .contact {
+            max-width: 900px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+        }
+
+        .info {
+            background: #172033;
+            color: white;
+        }
+
+        .info p {
+            color: #cbd5e1;
+            line-height: 2;
+        }
+
+        @media(max-width: 700px) {
+            .contact {
+                grid-template-columns: 1fr;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="contact">
+
+    <div class="box">
+        <h1>Contact Us</h1>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button>Send Message</button>
+    </div>
+
+    <div class="box info">
+        <h1>Get In Touch</h1>
+
+        <p>📍 Chennai, India</p>
+        <p>📧 support@example.com</p>
+        <p>📞 +91 98765 43210</p>
+        <p>🕒 Monday - Friday</p>
+    </div>
+
+</div>
+
+</body>
+</html>

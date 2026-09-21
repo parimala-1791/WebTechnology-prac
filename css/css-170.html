@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 170 - AI SaaS Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #172033;
+        }
+
+        .navigation {
+            padding: 20px 8%;
+            background: #172033;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #93c5fd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #172033;
+            color: white;
+        }
+
+        nav h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #eff6ff;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+        }
+
+        .hero span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+            color: #667085;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .features {
+            padding: 60px 8%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.07);
+        }
+
+        .feature h2 {
+            color: #2563eb;
+        }
+
+        @media(max-width:700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<nav>
+
+    <h2>AIFlow</h2>
+
+    <div>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Build the Future with <span>AI</span></h1>
+
+    <p>
+        AIFlow provides intelligent tools for businesses,
+        developers and data teams to automate everyday tasks.
+    </p>
+
+    <a href="#" class="button">Get Started</a>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>AI Automation</h2>
+        <p>Automate repetitive business workflows.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Smart Analytics</h2>
+        <p>Turn complex data into useful insights.</p>
+    </div>
+
+    <div class="feature">
+        <h2>AI Assistant</h2>
+        <p>Get intelligent assistance whenever you need it.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 253 - SaaS AI Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            padding: 20px 8%;
+            background: #020617;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+        }
+
+        .hero span {
+            color: #818cf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            background: #6366f1;
+            color: white;
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        @media(max-width:700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>The Future of <span>AI Software</span></h1>
+
+    <p>
+        Build intelligent workflows and automate
+        your business with modern AI technology.
+    </p>
+
+    <button>Explore Platform</button>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>AI Automation</h2>
+        <p>Automate repetitive tasks.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Smart Analytics</h2>
+        <p>Turn data into useful insights.</p>
+    </div>
+
+    <div class="feature">
+        <h2>AI Assistant</h2>
+        <p>Work smarter with intelligent tools.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

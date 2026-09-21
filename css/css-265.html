@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 265 - SaaS Project Management</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: #eef2ff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 13px 25px;
+            background: #4f46e5;
+            border: none;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media(max-width:700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>Manage Projects With Ease</h1>
+
+    <p>
+        Plan, organize and track every project
+        from one simple workspace.
+    </p>
+
+    <button>Start Project</button>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>Task Management</h2>
+        <p>Create and organize tasks.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Team Collaboration</h2>
+        <p>Work together with your team.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Reports</h2>
+        <p>Track project performance.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

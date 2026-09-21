@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS 07 - Backgrounds</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .box {
+            padding: 50px;
+            margin: 20px 0;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .solid {
+            background-color: #bfdbfe;
+        }
+
+        .gradient {
+            background: linear-gradient(90deg, #172554, #2563eb);
+            color: white;
+        }
+
+        .image-bg {
+            background-image: url("https://picsum.photos/800/250");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Backgrounds</h1>
+</header>
+
+<div class="content">
+
+    <div class="box solid">
+        Solid Background Color
+    </div>
+
+    <div class="box gradient">
+        Gradient Background
+    </div>
+
+    <div class="box image-bg">
+        Background Image
+    </div>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

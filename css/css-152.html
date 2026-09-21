@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 152 - Sales Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .sales {
+            padding: 40px 8%;
+        }
+
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .box h2 {
+            color: #2563eb;
+            font-size: 32px;
+        }
+
+        table {
+            margin-top: 25px;
+            width: 100%;
+            background: white;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #eff6ff;
+            color: #1d4ed8;
+        }
+
+        @media(max-width:700px) {
+            .summary {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="sales">
+
+    <h1>Sales Dashboard</h1>
+
+    <div class="summary">
+
+        <div class="box">
+            <p>Total Sales</p>
+            <h2>$75,400</h2>
+        </div>
+
+        <div class="box">
+            <p>Orders</p>
+            <h2>2,540</h2>
+        </div>
+
+        <div class="box">
+            <p>Customers</p>
+            <h2>1,840</h2>
+        </div>
+
+    </div>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Orders</th>
+            <th>Revenue</th>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>540</td>
+            <td>$32,000</td>
+        </tr>
+
+        <tr>
+            <td>Phone</td>
+            <td>780</td>
+            <td>$25,000</td>
+        </tr>
+
+        <tr>
+            <td>Watch</td>
+            <td>420</td>
+            <td>$18,400</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

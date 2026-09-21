@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 134 - Checkout Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .checkout {
+            max-width: 900px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #d0d5dd;
+            border-radius: 7px;
+        }
+
+        .summary {
+            background: #eff6ff;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media(max-width: 700px) {
+            .checkout {
+                grid-template-columns: 1fr;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="checkout">
+
+    <div class="box">
+        <h1>Billing Details</h1>
+
+        <label>Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Address</label>
+        <input type="text">
+
+        <label>Card Number</label>
+        <input type="text">
+
+        <button>Place Order</button>
+    </div>
+
+    <div class="box summary">
+        <h1>Order Summary</h1>
+
+        <p>Laptop <span style="float:right;">$999</span></p>
+        <p>Shipping <span style="float:right;">$20</span></p>
+        <hr>
+        <h2>Total <span style="float:right;">$1019</span></h2>
+    </div>
+
+</div>
+
+</body>
+</html>

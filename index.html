@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML CSS JavaScript Practical Programs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Cards container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual cards */
+        .card {
+            background: white;
+            width: 300px;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #172554;
+        }
+
+        .card p {
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Footer */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HTML • CSS • JavaScript</h1>
+        <p>Practical Programs</p>
+    </header>
+
+    <!-- Program Cards -->
+    <div class="container">
+
+        <div class="cards">
+
+            <!-- HTML Card -->
+            <div class="card">
+                <h2>HTML Programs</h2>
+
+                <p>
+                    Learn HTML fundamentals including headings,
+                    lists, tables, forms, multimedia and semantic elements.
+                </p>
+
+                <a href="html/index.html" class="btn">
+                    View HTML Programs
+                </a>
+            </div>
+
+
+            <!-- CSS Card -->
+            <div class="card">
+                <h2>CSS Programs</h2>
+
+                <p>
+                    Explore CSS selectors, layouts, animations,
+                    responsive design and modern UI components.
+                </p>
+
+                <a href="css/index.html" class="btn">
+                    View CSS Programs
+                </a>
+            </div>
+
+
+            <!-- JavaScript Card -->
+            <div class="card">
+                <h2>JavaScript Programs</h2>
+
+                <p>
+                    Practice JavaScript programming, DOM manipulation,
+                    events, forms, storage and mini projects.
+                </p>
+
+                <a href="javascript/index.html" class="btn">
+                    View JavaScript Programs
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>HTML, CSS & JavaScript Practical Programs</p>
+    </footer>
+
+</body>
+
+</html>

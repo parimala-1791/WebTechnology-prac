@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 48 - Pagination</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .pagination {
+            display: inline-flex;
+            margin-top: 30px;
+        }
+
+        .pagination a {
+            padding: 12px 18px;
+            margin: 3px;
+            text-decoration: none;
+            color: #2563eb;
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px #cbd5e1;
+        }
+
+        .pagination a:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .pagination .active {
+            background: #172554;
+            color: white;
+        }
+
+        .navigation {
+            margin: 50px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Pagination</h1>
+
+        <div class="pagination">
+            <a href="#">«</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">»</a>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

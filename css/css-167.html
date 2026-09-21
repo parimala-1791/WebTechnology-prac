@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 167 - AI Chat Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #172033;
+            color: white;
+        }
+
+        .navigation {
+            padding: 20px;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #93c5fd;
+        }
+
+        .chat {
+            width: 700px;
+            max-width: 90%;
+            margin: 30px auto;
+            background: #243044;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .message {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .user {
+            background: #2563eb;
+        }
+
+        .ai {
+            background: #334155;
+        }
+
+        .input {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 13px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            padding: 13px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="chat">
+
+    <h1>AI Assistant</h1>
+
+    <div class="message user">
+        Explain data science.
+    </div>
+
+    <div class="message ai">
+        Data science combines statistics, programming and domain
+        knowledge to extract useful information from data.
+    </div>
+
+    <div class="message user">
+        What should I learn first?
+    </div>
+
+    <div class="message ai">
+        Start with Python, statistics, data structures and data
+        visualization.
+    </div>
+
+    <div class="input">
+        <input type="text" placeholder="Ask AI...">
+        <button>Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>

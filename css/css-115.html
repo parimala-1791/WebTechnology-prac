@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 115 - KPI Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .dashboard {
+            padding: 50px 8%;
+        }
+
+        .kpis {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .kpi {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .kpi h2 {
+            font-size: 35px;
+            margin: 10px 0;
+        }
+
+        .positive {
+            color: green;
+        }
+
+        .negative {
+            color: red;
+        }
+
+        @media(max-width: 700px) {
+            .kpis {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+
+    <h1>Key Performance Indicators</h1>
+
+    <div class="kpis">
+
+        <div class="kpi">
+            <p>Revenue</p>
+            <h2>$84,500</h2>
+            <span class="positive">↑ 18%</span>
+        </div>
+
+        <div class="kpi">
+            <p>Customers</p>
+            <h2>4,250</h2>
+            <span class="positive">↑ 12%</span>
+        </div>
+
+        <div class="kpi">
+            <p>Bounce Rate</p>
+            <h2>32%</h2>
+            <span class="negative">↓ 4%</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

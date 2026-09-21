@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 227 - SaaS Billing Page</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .billing {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .price {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .invoice {
+            margin-top: 30px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total {
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="billing">
+
+        <h1>Billing Overview</h1>
+
+        <p>Current Plan</p>
+        <div class="price">$49/month</div>
+        <p>Professional Plan</p>
+
+        <div class="invoice">
+
+            <div class="row">
+                <span>Base Plan</span>
+                <span>$40</span>
+            </div>
+
+            <div class="row">
+                <span>Additional Users</span>
+                <span>$5</span>
+            </div>
+
+            <div class="row">
+                <span>Tax</span>
+                <span>$4</span>
+            </div>
+
+            <div class="row total">
+                <span>Total</span>
+                <span>$49</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

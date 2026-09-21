@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 193 - SaaS Usage Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.usage{padding:40px 8%;max-width:900px;margin:auto}
+.card{background:white;padding:25px;border-radius:15px;margin-bottom:20px}
+.progress{height:12px;background:#e5e7eb;border-radius:10px}
+.fill{height:100%;background:#2563eb;border-radius:10px}
+.storage{width:70%}.api{width:45%}.users{width:80%}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="usage">
+<h1>Usage</h1>
+
+<div class="card">
+<h2>Storage</h2>
+<p>70 GB of 100 GB used</p>
+<div class="progress"><div class="fill storage"></div></div>
+</div>
+
+<div class="card">
+<h2>API Requests</h2>
+<p>45,000 of 100,000 requests</p>
+<div class="progress"><div class="fill api"></div></div>
+</div>
+
+<div class="card">
+<h2>Users</h2>
+<p>800 of 1,000 users</p>
+<div class="progress"><div class="fill users"></div></div>
+</div>
+
+</div>
+
+</body>
+</html>

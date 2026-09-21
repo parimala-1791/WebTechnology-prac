@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 74 - User List</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            width: 550px;
+            margin: 50px auto;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cbd5e1;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .user h3 {
+            margin: 0;
+            color: #172554;
+        }
+
+        .user p {
+            margin: 5px 0 0;
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>User List</h1>
+
+        <div class="user">
+            <div class="avatar">A</div>
+            <div>
+                <h3>Ananya</h3>
+                <p>ananya@example.com</p>
+            </div>
+        </div>
+
+        <div class="user">
+            <div class="avatar">P</div>
+            <div>
+                <h3>Parimala</h3>
+                <p>parimala@example.com</p>
+            </div>
+        </div>
+
+        <div class="user">
+            <div class="avatar">R</div>
+            <div>
+                <h3>Rahul</h3>
+                <p>rahul@example.com</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 36 - Navigation Bar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        nav {
+            background: #172554;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .links a:hover {
+            color: #93c5fd;
+        }
+
+        .content {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .content h1 {
+            color: #172554;
+        }
+
+        .navigation {
+            margin-top: 50px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>CSS Navigation Bar</h1>
+        <p>This page demonstrates a simple responsive navigation bar.</p>
+
+        <div class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="index.html">Back to CSS Programs</a>
+        </div>
+    </div>
+
+</body>
+</html>

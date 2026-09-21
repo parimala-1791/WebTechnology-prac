@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 96 - Settings Panel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        .settings {
+            width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .option {
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option h3 {
+            margin: 0;
+            color: #172554;
+        }
+
+        .option p {
+            margin: 5px 0;
+            color: #64748b;
+        }
+
+        .switch {
+            width: 50px;
+            height: 26px;
+            border-radius: 20px;
+            background: #2563eb;
+            position: relative;
+        }
+
+        .switch::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="settings">
+
+        <h1>Settings</h1>
+
+        <div class="option">
+
+            <div>
+                <h3>Email Notifications</h3>
+                <p>Receive updates through email.</p>
+            </div>
+
+            <div class="switch"></div>
+
+        </div>
+
+        <div class="option">
+
+            <div>
+                <h3>Dark Mode</h3>
+                <p>Enable dark theme appearance.</p>
+            </div>
+
+            <div class="switch"></div>
+
+        </div>
+
+        <div class="option">
+
+            <div>
+                <h3>Auto Save</h3>
+                <p>Automatically save changes.</p>
+            </div>
+
+            <div class="switch"></div>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

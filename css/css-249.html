@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 249 - SaaS Pricing Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+            text-align: center;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+            text-align: left;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .plan {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+        }
+
+        .popular {
+            border: 3px solid #4f46e5;
+        }
+
+        .price {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            background: #4f46e5;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media(max-width:700px) {
+            .plans {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Simple Pricing</h1>
+    <p>Choose a plan that fits your team.</p>
+
+    <div class="plans">
+
+        <div class="plan">
+            <h2>Starter</h2>
+            <div class="price">$9</div>
+            <p>5 Projects</p>
+            <p>Basic Analytics</p>
+            <button>Start</button>
+        </div>
+
+        <div class="plan popular">
+            <h2>Professional</h2>
+            <div class="price">$29</div>
+            <p>Unlimited Projects</p>
+            <p>Advanced Analytics</p>
+            <button>Start</button>
+        </div>
+
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <div class="price">$79</div>
+            <p>Unlimited Users</p>
+            <p>Premium Support</p>
+            <button>Start</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

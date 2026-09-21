@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 154 - Project Management</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .projects {
+            padding: 40px 7%;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .project h2 {
+            color: #2563eb;
+        }
+
+        .progress {
+            height: 10px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .p1 { width: 85%; }
+        .p2 { width: 60%; }
+        .p3 { width: 40%; }
+
+        @media(max-width:800px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<section class="projects">
+
+    <h1>Project Management</h1>
+
+    <div class="project-grid">
+
+        <div class="project">
+            <h2>Website</h2>
+            <p>Project completion: 85%</p>
+            <div class="progress">
+                <div class="fill p1"></div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Mobile App</h2>
+            <p>Project completion: 60%</p>
+            <div class="progress">
+                <div class="fill p2"></div>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>AI Project</h2>
+            <p>Project completion: 40%</p>
+            <div class="progress">
+                <div class="fill p3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

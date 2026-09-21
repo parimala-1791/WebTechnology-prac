@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 13 - Dimensions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .fixed {
+            width: 300px;
+            height: 100px;
+            background: #dbeafe;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .percentage {
+            width: 70%;
+            height: 100px;
+            background: #dcfce7;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 600px;
+            min-height: 100px;
+            background: #fef3c7;
+            padding: 20px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Width, Height and Dimensions</h1>
+</header>
+
+<div class="content">
+
+    <div class="fixed">
+        Fixed Width and Height
+    </div>
+
+    <div class="percentage">
+        Percentage Width
+    </div>
+
+    <div class="responsive">
+        Min-width, Max-width and Responsive Dimensions
+    </div>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

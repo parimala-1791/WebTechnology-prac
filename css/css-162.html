@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 162 - AI Prompt Interface</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #172033;
+            color: white;
+        }
+
+        .navigation {
+            padding: 20px;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #93c5fd;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 80px auto;
+            padding: 20px;
+        }
+
+        .prompt {
+            background: #243044;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 130px;
+            padding: 15px;
+            box-sizing: border-box;
+            background: #172033;
+            color: white;
+            border: 1px solid #475569;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 13px 25px;
+            background: #2563eb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .response {
+            margin-top: 25px;
+            background: #243044;
+            padding: 20px;
+            border-radius: 15px;
+            color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="container">
+
+    <h1>AI Assistant</h1>
+
+    <div class="prompt">
+
+        <h3>Enter your prompt</h3>
+
+        <textarea placeholder="Ask something..."></textarea>
+
+        <button>Generate Response</button>
+
+    </div>
+
+    <div class="response">
+        <strong>AI Response</strong>
+        <p>
+            Your generated response will appear here.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

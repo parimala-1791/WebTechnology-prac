@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 133 - Product Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .products {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+        }
+
+        .image {
+            height: 150px;
+            background: #dbeafe;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .price {
+            color: #2563eb;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 8px;
+        }
+
+        @media(max-width: 800px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="text-align:center;">Products</h1>
+
+<section class="products">
+
+    <div class="product">
+        <div class="image">💻</div>
+        <h2>Laptop</h2>
+        <p>High performance laptop.</p>
+        <div class="price">$999</div>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <div class="image">📱</div>
+        <h2>Smartphone</h2>
+        <p>Modern smartphone.</p>
+        <div class="price">$599</div>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <div class="image">⌚</div>
+        <h2>Smart Watch</h2>
+        <p>Track your daily activities.</p>
+        <div class="price">$199</div>
+        <button>Buy Now</button>
+    </div>
+
+</section>
+
+</body>
+</html>

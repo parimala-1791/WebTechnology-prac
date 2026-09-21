@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 266 - SaaS Communication Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .communication {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            background: white;
+            min-height: 500px;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background: #172033;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar div {
+            padding: 15px 0;
+        }
+
+        .chat {
+            padding: 30px;
+        }
+
+        .message {
+            max-width: 65%;
+            padding: 15px;
+            margin: 15px 0;
+            background: #eef2ff;
+            border-radius: 12px;
+        }
+
+        .right {
+            margin-left: auto;
+            background: #4f46e5;
+            color: white;
+        }
+
+        @media(max-width:700px) {
+            .communication {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <div class="communication">
+
+        <div class="sidebar">
+            <h2>Messages</h2>
+            <div>General</div>
+            <div>Development</div>
+            <div>Design</div>
+            <div>Marketing</div>
+        </div>
+
+        <div class="chat">
+
+            <h1>General</h1>
+
+            <div class="message">
+                Hello team! How is everyone doing?
+            </div>
+
+            <div class="message right">
+                Everything is going well!
+            </div>
+
+            <div class="message">
+                Great! Let's discuss the project.
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

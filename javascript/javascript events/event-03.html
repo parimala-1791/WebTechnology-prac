@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 03 - Mouseover</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        #area {
+            background: #dbeafe;
+            padding: 40px;
+            border-radius: 12px;
+            font-size: 22px;
+            transition: 0.3s;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Mouseover Event</h1>
+
+    <div id="area">
+        Move your mouse over me
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("area").addEventListener("mouseover", function() {
+
+    this.style.backgroundColor = "#2563eb";
+    this.style.color = "white";
+    this.textContent = "Mouse is over the element!";
+
+});
+
+</script>
+
+</body>
+</html>

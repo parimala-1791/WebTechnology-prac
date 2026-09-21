@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 153 - Customer Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .customers {
+            padding: 40px 8%;
+        }
+
+        .customer-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .customer {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,.06);
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #dbeafe;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        .customer h2 {
+            color: #2563eb;
+        }
+
+        .customer p {
+            color: #667085;
+        }
+
+        @media(max-width:800px) {
+            .customer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<section class="customers">
+
+    <h1>Customers</h1>
+
+    <div class="customer-grid">
+
+        <div class="customer">
+            <div class="avatar">👩</div>
+            <h2>Priya</h2>
+            <p>Premium Customer</p>
+        </div>
+
+        <div class="customer">
+            <div class="avatar">👨</div>
+            <h2>Rahul</h2>
+            <p>Business Customer</p>
+        </div>
+
+        <div class="customer">
+            <div class="avatar">👩</div>
+            <h2>Ananya</h2>
+            <p>Regular Customer</p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

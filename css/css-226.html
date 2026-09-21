@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 226 - SaaS Settings</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .settings {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .panel {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .setting {
+            padding: 20px 0;
+            border-bottom: 1px solid #e5e7eb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toggle {
+            width: 50px;
+            height: 26px;
+            background: #4f46e5;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .toggle::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="settings">
+
+    <div class="panel">
+
+        <h1>Settings</h1>
+
+        <div class="setting">
+            <div>
+                <strong>Email Notifications</strong>
+                <p>Receive updates by email.</p>
+            </div>
+            <div class="toggle"></div>
+        </div>
+
+        <div class="setting">
+            <div>
+                <strong>Dark Mode</strong>
+                <p>Use a dark interface.</p>
+            </div>
+            <div class="toggle"></div>
+        </div>
+
+        <div class="setting">
+            <div>
+                <strong>Two-Factor Authentication</strong>
+                <p>Improve account security.</p>
+            </div>
+            <div class="toggle"></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

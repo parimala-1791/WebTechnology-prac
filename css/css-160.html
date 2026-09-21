@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 160 - Settings Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .settings {
+            max-width: 750px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .setting {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .setting p {
+            color: #667085;
+        }
+
+        .toggle {
+            width: 50px;
+            height: 26px;
+            border-radius: 20px;
+            background: #2563eb;
+            position: relative;
+        }
+
+        .toggle::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            top: 3px;
+            right: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="settings">
+
+    <h1>Account Settings</h1>
+
+    <div class="setting">
+        <div>
+            <strong>Email Notifications</strong>
+            <p>Receive email notifications.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+    <div class="setting">
+        <div>
+            <strong>Two Factor Authentication</strong>
+            <p>Add extra security to your account.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+    <div class="setting">
+        <div>
+            <strong>Automatic Updates</strong>
+            <p>Keep your account updated.</p>
+        </div>
+        <div class="toggle"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

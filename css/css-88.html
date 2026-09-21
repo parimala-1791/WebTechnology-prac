@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 88 - Analytics Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-top: 40px;
+        }
+
+        .analytics {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        .label {
+            color: #64748b;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+            color: #172554;
+            margin: 10px 0;
+        }
+
+        .positive {
+            color: #16a34a;
+        }
+
+        .negative {
+            color: #dc2626;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 800px) {
+            .analytics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .analytics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Analytics Overview</h1>
+
+    <div class="analytics">
+
+        <div class="card">
+            <div class="label">Visitors</div>
+            <div class="value">12,540</div>
+            <div class="positive">+18%</div>
+        </div>
+
+        <div class="card">
+            <div class="label">Sales</div>
+            <div class="value">₹84,000</div>
+            <div class="positive">+12%</div>
+        </div>
+
+        <div class="card">
+            <div class="label">Orders</div>
+            <div class="value">325</div>
+            <div class="negative">-3%</div>
+        </div>
+
+        <div class="card">
+            <div class="label">Conversion</div>
+            <div class="value">8.4%</div>
+            <div class="positive">+2%</div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

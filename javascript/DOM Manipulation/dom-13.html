@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 13 - Show Hide</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        #content {
+            background: #dbeafe;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Show and Hide Elements</h1>
+
+    <div id="content">
+        This content can be hidden or shown.
+    </div>
+
+    <button onclick="showContent()">Show</button>
+
+    <button onclick="hideContent()">Hide</button>
+
+</div>
+
+<script>
+
+function showContent() {
+
+    document.getElementById("content").style.display = "block";
+
+}
+
+function hideContent() {
+
+    document.getElementById("content").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>

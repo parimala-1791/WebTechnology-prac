@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 117 - Kanban Board</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        .board {
+            display: flex;
+            gap: 20px;
+            padding: 40px 6%;
+            overflow-x: auto;
+        }
+
+        .column {
+            min-width: 280px;
+            background: #e9eef5;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .column h2 {
+            font-size: 18px;
+        }
+
+        .task {
+            background: white;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .task p {
+            color: #667085;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1 style="padding: 20px 6%;">Project Board</h1>
+
+<div class="board">
+
+    <div class="column">
+        <h2>To Do</h2>
+
+        <div class="task">
+            <strong>Design Homepage</strong>
+            <p>Prepare homepage design.</p>
+        </div>
+
+        <div class="task">
+            <strong>Create Database</strong>
+            <p>Design database tables.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>In Progress</h2>
+
+        <div class="task">
+            <strong>Build Dashboard</strong>
+            <p>Develop dashboard UI.</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Completed</h2>
+
+        <div class="task">
+            <strong>Login Page</strong>
+            <p>Login page completed.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

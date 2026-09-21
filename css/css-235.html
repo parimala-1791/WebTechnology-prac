@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 235 - SaaS Activity Timeline</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .timeline {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            border-left: 3px solid #4f46e5;
+        }
+
+        .event {
+            background: white;
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .event::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background: #4f46e5;
+            border-radius: 50%;
+            position: absolute;
+            left: -29px;
+            top: 25px;
+        }
+
+        .time {
+            color: #6b7280;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="timeline">
+
+    <h1>Project Timeline</h1>
+
+    <div class="event">
+        <h2>Project Created</h2>
+        <p>The project was successfully created.</p>
+        <span class="time">September 1</span>
+    </div>
+
+    <div class="event">
+        <h2>Design Completed</h2>
+        <p>The UI design was completed.</p>
+        <span class="time">September 10</span>
+    </div>
+
+    <div class="event">
+        <h2>Development Started</h2>
+        <p>Development work has started.</p>
+        <span class="time">September 15</span>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM 12 - Dynamic Table</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 700px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 25px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Dynamic Table</h1>
+
+    <input type="text" id="name" placeholder="Name">
+
+    <input type="number" id="age" placeholder="Age">
+
+    <button onclick="addRow()">Add Row</button>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+
+    </table>
+
+</div>
+
+<script>
+
+function addRow() {
+
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+
+    if (name === "" || age === "") {
+        alert("Please enter all details.");
+        return;
+    }
+
+    let row = document.createElement("tr");
+
+    row.innerHTML =
+        "<td>" + name + "</td>" +
+        "<td>" + age + "</td>";
+
+    document.getElementById("tableBody").appendChild(row);
+
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+
+}
+
+</script>
+
+</body>
+</html>

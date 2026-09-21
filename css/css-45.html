@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 45 - Accordion FAQ</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-bottom: 30px;
+        }
+
+        details {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: 0 3px 10px #cbd5e1;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        details p {
+            color: #475569;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Frequently Asked Questions</h1>
+
+        <details>
+            <summary>What is CSS?</summary>
+            <p>
+                CSS stands for Cascading Style Sheets.
+                It is used to style HTML webpages.
+            </p>
+        </details>
+
+        <details>
+            <summary>Why do we use CSS?</summary>
+            <p>
+                CSS is used to control colors, fonts,
+                spacing, layout and responsive design.
+            </p>
+        </details>
+
+        <details>
+            <summary>Can CSS create animations?</summary>
+            <p>
+                Yes. CSS supports animations and transitions
+                without requiring JavaScript.
+            </p>
+        </details>
+
+        <details>
+            <summary>Is CSS responsive?</summary>
+            <p>
+                Yes. Media queries can be used to create
+                responsive webpages for different screen sizes.
+            </p>
+        </details>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

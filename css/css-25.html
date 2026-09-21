@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 25 - Float and Clear</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .image {
+            width: 180px;
+            height: 130px;
+            background: #2563eb;
+            color: white;
+            float: left;
+            margin: 0 20px 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .clear {
+            clear: both;
+            margin-top: 30px;
+            padding: 20px;
+            background: #dbeafe;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Float and Clear</h1>
+</header>
+
+<div class="content">
+
+    <div class="image">
+        FLOAT
+    </div>
+
+    <p>
+        The float property allows an element to move
+        to the left or right of its container.
+        Text can flow around the floated element.
+        This technique was commonly used for layouts
+        before modern CSS layout systems became popular.
+    </p>
+
+    <div class="clear">
+        This section uses clear: both, so it appears
+        below the floated element.
+    </div>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

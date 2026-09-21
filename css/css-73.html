@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 73 - Chat Messages</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e2e8f0;
+        }
+
+        .chat {
+            width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+        }
+
+        .message {
+            padding: 12px 18px;
+            margin: 12px 0;
+            max-width: 70%;
+            border-radius: 15px;
+            line-height: 1.4;
+        }
+
+        .received {
+            background: #e2e8f0;
+            color: #172554;
+        }
+
+        .sent {
+            background: #2563eb;
+            color: white;
+            margin-left: auto;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat">
+
+        <h1>Chat</h1>
+
+        <div class="message received">
+            Hi! How is your project going?
+        </div>
+
+        <div class="message sent">
+            It's going well. I'm almost finished!
+        </div>
+
+        <div class="message received">
+            That's great! Keep going.
+        </div>
+
+        <div class="message sent">
+            Thank you! 😊
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

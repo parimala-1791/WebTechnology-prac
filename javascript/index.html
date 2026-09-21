@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Programs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1e293b;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        .home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #2563eb;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            background: #111827;
+            color: white;
+            padding: 18px 22px;
+            border-radius: 12px 12px 0 0;
+            font-size: 24px;
+        }
+
+        .programs {
+            background: white;
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .program {
+            display: block;
+            padding: 16px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1e293b;
+            transition: 0.3s;
+        }
+
+        .program:hover {
+            background: #eff6ff;
+            border-color: #2563eb;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.15);
+        }
+
+        .number {
+            color: #2563eb;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .mini {
+            background: #fefce8;
+            border-color: #facc15;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .programs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>JavaScript Programs</h1>
+
+        <p>
+            DOM Manipulation, Events, Forms, Browser Features,
+            Web Storage & Mini Projects
+        </p>
+
+        <a href="../index.html" class="home">← Back to Main Dashboard</a>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- DOM MANIPULATION -->
+
+        <div class="section">
+
+            <div class="section-title">
+                1. DOM Manipulation
+            </div>
+
+            <div class="programs">
+
+                <a href="dom-01.html" class="program">
+                    <span class="number">DOM 01</span>
+                    Select Element by ID
+                </a>
+
+                <a href="dom-02.html" class="program">
+                    <span class="number">DOM 02</span>
+                    Change Text Content
+                </a>
+
+                <a href="dom-03.html" class="program">
+                    <span class="number">DOM 03</span>
+                    Change HTML Content
+                </a>
+
+                <a href="dom-04.html" class="program">
+                    <span class="number">DOM 04</span>
+                    Change CSS Styles
+                </a>
+
+                <a href="dom-05.html" class="program">
+                    <span class="number">DOM 05</span>
+                    Create HTML Elements
+                </a>
+
+                <a href="dom-06.html" class="program">
+                    <span class="number">DOM 06</span>
+                    Remove HTML Elements
+                </a>
+
+                <a href="dom-07.html" class="program">
+                    <span class="number">DOM 07</span>
+                    Add and Remove Classes
+                </a>
+
+                <a href="dom-08.html" class="program">
+                    <span class="number">DOM 08</span>
+                    Change Attributes
+                </a>
+
+                <a href="dom-09.html" class="program">
+                    <span class="number">DOM 09</span>
+                    Image Manipulation
+                </a>
+
+                <a href="dom-10.html" class="program">
+                    <span class="number">DOM 10</span>
+                    Dynamic List
+                </a>
+
+                <a href="dom-11.html" class="program">
+                    <span class="number">DOM 11</span>
+                    Add and Delete List Items
+                </a>
+
+                <a href="dom-12.html" class="program">
+                    <span class="number">DOM 12</span>
+                    Dynamic Table
+                </a>
+
+                <a href="dom-13.html" class="program">
+                    <span class="number">DOM 13</span>
+                    Show and Hide Elements
+                </a>
+
+                <a href="dom-14.html" class="program">
+                    <span class="number">DOM 14</span>
+                    Counter Using DOM
+                </a>
+
+                <a href="dom-15.html" class="program">
+                    <span class="number">DOM 15</span>
+                    Dynamic Content Generator
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- JAVASCRIPT EVENTS -->
+
+        <div class="section">
+
+            <div class="section-title">
+                2. JavaScript Events
+            </div>
+
+            <div class="programs">
+
+                <a href="event-01.html" class="program">
+                    <span class="number">Event 01</span>
+                    Click Event
+                </a>
+
+                <a href="event-02.html" class="program">
+                    <span class="number">Event 02</span>
+                    Double Click Event
+                </a>
+
+                <a href="event-03.html" class="program">
+                    <span class="number">Event 03</span>
+                    Mouseover Event
+                </a>
+
+                <a href="event-04.html" class="program">
+                    <span class="number">Event 04</span>
+                    Mouseout Event
+                </a>
+
+                <a href="event-05.html" class="program">
+                    <span class="number">Event 05</span>
+                    Keydown Event
+                </a>
+
+                <a href="event-06.html" class="program">
+                    <span class="number">Event 06</span>
+                    Keyup Event
+                </a>
+
+                <a href="event-07.html" class="program">
+                    <span class="number">Event 07</span>
+                    Input Event
+                </a>
+
+                <a href="event-08.html" class="program">
+                    <span class="number">Event 08</span>
+                    Change Event
+                </a>
+
+                <a href="event-09.html" class="program">
+                    <span class="number">Event 09</span>
+                    Submit Event
+                </a>
+
+                <a href="event-10.html" class="program">
+                    <span class="number">Event 10</span>
+                    Event Listener
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORMS AND VALIDATION -->
+
+        <div class="section">
+
+            <div class="section-title">
+                3. Forms and Validation
+            </div>
+
+            <div class="programs">
+
+                <a href="form-01.html" class="program">
+                    <span class="number">Form 01</span>
+                    Basic Form Validation
+                </a>
+
+                <a href="form-02.html" class="program">
+                    <span class="number">Form 02</span>
+                    Required Field Validation
+                </a>
+
+                <a href="form-03.html" class="program">
+                    <span class="number">Form 03</span>
+                    Email Validation
+                </a>
+
+                <a href="form-04.html" class="program">
+                    <span class="number">Form 04</span>
+                    Password Validation
+                </a>
+
+                <a href="form-05.html" class="program">
+                    <span class="number">Form 05</span>
+                    Registration Form Validation
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- BROWSER OBJECTS -->
+
+        <div class="section">
+
+            <div class="section-title">
+                4. Browser Objects & Browser Features
+            </div>
+
+            <div class="programs">
+
+                <a href="browser-01.html" class="program">
+                    <span class="number">Browser 01</span>
+                    Window Object
+                </a>
+
+                <a href="browser-02.html" class="program">
+                    <span class="number">Browser 02</span>
+                    Screen Object
+                </a>
+
+                <a href="browser-03.html" class="program">
+                    <span class="number">Browser 03</span>
+                    Location Object
+                </a>
+
+                <a href="browser-04.html" class="program">
+                    <span class="number">Browser 04</span>
+                    History Object
+                </a>
+
+                <a href="browser-05.html" class="program">
+                    <span class="number">Browser 05</span>
+                    Navigator Object
+                </a>
+
+                <a href="browser-06.html" class="program">
+                    <span class="number">Browser 06</span>
+                    Geolocation
+                </a>
+
+                <a href="browser-07.html" class="program">
+                    <span class="number">Browser 07</span>
+                    Browser Notifications
+                </a>
+
+                <a href="browser-08.html" class="program">
+                    <span class="number">Browser 08</span>
+                    Clipboard API
+                </a>
+
+                <a href="browser-09.html" class="program">
+                    <span class="number">Browser 09</span>
+                    Online / Offline Detection
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- WEB STORAGE -->
+
+        <div class="section">
+
+            <div class="section-title">
+                5. Web Storage
+            </div>
+
+            <div class="programs">
+
+                <a href="storage-01.html" class="program">
+                    <span class="number">Storage 01</span>
+                    Local Storage
+                </a>
+
+                <a href="storage-02.html" class="program">
+                    <span class="number">Storage 02</span>
+                    Session Storage
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- MINI PROJECTS -->
+
+        <div class="section">
+
+            <div class="section-title">
+                6. Mini Projects
+            </div>
+
+            <div class="programs">
+
+                <a href="calculator.html" class="program mini">
+                    <span class="number">Mini Project 01</span>
+                    Calculator
+                </a>
+
+                <a href="digital-clock.html" class="program mini">
+                    <span class="number">Mini Project 02</span>
+                    Digital Clock
+                </a>
+
+                <a href="stopwatch.html" class="program mini">
+                    <span class="number">Mini Project 03</span>
+                    Stopwatch
+                </a>
+
+                <a href="countdown.html" class="program mini">
+                    <span class="number">Mini Project 04</span>
+                    Countdown Timer
+                </a>
+
+                <a href="todo-list.html" class="program mini">
+                    <span class="number">Mini Project 05</span>
+                    To-Do List
+                </a>
+
+                <a href="weather.html" class="program mini">
+                    <span class="number">Mini Project 06</span>
+                    Weather App
+                </a>
+
+                <a href="quiz.html" class="program mini">
+                    <span class="number">Mini Project 07</span>
+                    Quiz Application
+                </a>
+
+                <a href="guessing-game.html" class="program mini">
+                    <span class="number">Mini Project 08</span>
+                    Number Guessing Game
+                </a>
+
+                <a href="tic-tac-toe.html" class="program mini">
+                    <span class="number">Mini Project 09</span>
+                    Tic Tac Toe
+                </a>
+
+                <a href="expense-tracker.html" class="program mini">
+                    <span class="number">Mini Project 10</span>
+                    Expense Tracker
+                </a>
+
+                <a href="grade-calculator.html" class="program mini">
+                    <span class="number">Mini Project 11</span>
+                    Grade Calculator
+                </a>
+
+                <a href="shopping-cart.html" class="program mini">
+                    <span class="number">Mini Project 12</span>
+                    Shopping Cart
+                </a>
+
+                <a href="notes.html" class="program mini">
+                    <span class="number">Mini Project 13</span>
+                    Notes Application
+                </a>
+
+                <a href="password-generator.html" class="program mini">
+                    <span class="number">Mini Project 14</span>
+                    Password Generator
+                </a>
+
+                <a href="bmi.html" class="program mini">
+                    <span class="number">Mini Project 15</span>
+                    BMI Calculator
+                </a>
+
+                <a href="currency.html" class="program mini">
+                    <span class="number">Mini Project 16</span>
+                    Currency Converter
+                </a>
+
+                <a href="portfolio.html" class="program mini">
+                    <span class="number">Mini Project 17</span>
+                    Personal Portfolio
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>JavaScript Practical Programs</p>
+        <p>HTML • CSS • JavaScript</p>
+    </footer>
+
+</body>
+</html>

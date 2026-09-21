@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 203 - AI Model Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #182033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .metric {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+    <h1>AI Models</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <span class="tag">Language</span>
+            <h2>Model Alpha</h2>
+            <div class="metric">94%</div>
+            <p>Accuracy score</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Vision</span>
+            <h2>Model Vision</h2>
+            <div class="metric">91%</div>
+            <p>Recognition accuracy</p>
+        </div>
+
+        <div class="card">
+            <span class="tag">Prediction</span>
+            <h2>Model Predict</h2>
+            <div class="metric">89%</div>
+            <p>Prediction accuracy</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

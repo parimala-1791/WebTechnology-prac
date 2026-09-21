@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 158 - Email Inbox</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .inbox {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .email {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .email:hover {
+            background: #f8fafc;
+        }
+
+        .sender {
+            width: 130px;
+            font-weight: bold;
+        }
+
+        .message {
+            flex: 1;
+            color: #667085;
+        }
+
+        .time {
+            color: #98a2b3;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="inbox">
+
+    <h1 style="padding:20px;">Inbox</h1>
+
+    <div class="email">
+        <div class="sender">Google</div>
+        <div class="message">Your security report is ready.</div>
+        <div class="time">10:30 AM</div>
+    </div>
+
+    <div class="email">
+        <div class="sender">Professor</div>
+        <div class="message">Assignment submission reminder.</div>
+        <div class="time">9:15 AM</div>
+    </div>
+
+    <div class="email">
+        <div class="sender">GitHub</div>
+        <div class="message">New repository activity.</div>
+        <div class="time">Yesterday</div>
+    </div>
+
+</div>
+
+</body>
+</html>

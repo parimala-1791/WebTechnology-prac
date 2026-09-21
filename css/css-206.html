@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 206 - Analytics Overview</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .dashboard {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .positive {
+            color: #16a34a;
+        }
+
+        @media(max-width:800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:500px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="dashboard">
+    <h1>Analytics Overview</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>Visitors</p>
+            <div class="number">24,500</div>
+            <p class="positive">+12%</p>
+        </div>
+
+        <div class="card">
+            <p>Revenue</p>
+            <div class="number">$18,250</div>
+            <p class="positive">+18%</p>
+        </div>
+
+        <div class="card">
+            <p>Customers</p>
+            <div class="number">4,320</div>
+            <p class="positive">+9%</p>
+        </div>
+
+        <div class="card">
+            <p>Conversion</p>
+            <div class="number">7.8%</div>
+            <p class="positive">+2.4%</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

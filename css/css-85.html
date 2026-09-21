@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 85 - Responsive Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 500px;
+        }
+
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+        }
+
+        .sidebar a:hover {
+            background: #2563eb;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .main h1 {
+            color: #172554;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #cbd5e1;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 800px) {
+
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <h2>Dashboard</h2>
+
+            <a href="#">Home</a>
+            <a href="#">Analytics</a>
+            <a href="#">Projects</a>
+            <a href="#">Settings</a>
+
+        </aside>
+
+        <main class="main">
+
+            <h1>Overview</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>Users</h2>
+                    <div class="number">1,250</div>
+                </div>
+
+                <div class="card">
+                    <h2>Projects</h2>
+                    <div class="number">85</div>
+                </div>
+
+                <div class="card">
+                    <h2>Revenue</h2>
+                    <div class="number">₹1.2L</div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

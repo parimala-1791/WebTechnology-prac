@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eff6ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        input, select {
+            padding: 12px;
+            width: 80%;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Currency Converter</h1>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <select id="currency">
+
+        <option value="83">USD to INR</option>
+
+        <option value="90">EUR to INR</option>
+
+        <option value="105">GBP to INR</option>
+
+    </select>
+
+    <br>
+
+    <button onclick="convert()">Convert</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function convert() {
+
+    let amount =
+        Number(document.getElementById("amount").value);
+
+    let rate =
+        Number(document.getElementById("currency").value);
+
+    if (amount <= 0) {
+        alert("Enter a valid amount");
+        return;
+    }
+
+    let result = amount * rate;
+
+    document.getElementById("result").innerHTML =
+        "Converted Amount: ₹" + result.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>

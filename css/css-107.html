@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 107 - Statistics Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        h1 {
+            padding: 20px 8%;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 8%;
+        }
+
+        .stat {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+        }
+
+        .stat h2 {
+            font-size: 32px;
+            margin: 10px 0;
+            color: #2563eb;
+        }
+
+        .stat p {
+            color: #667085;
+        }
+
+        @media(max-width: 800px) {
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<h1>Business Statistics</h1>
+
+<section class="stats">
+
+    <div class="stat">
+        <p>Total Users</p>
+        <h2>12,450</h2>
+    </div>
+
+    <div class="stat">
+        <p>Revenue</p>
+        <h2>$45K</h2>
+    </div>
+
+    <div class="stat">
+        <p>Orders</p>
+        <h2>8,250</h2>
+    </div>
+
+    <div class="stat">
+        <p>Growth</p>
+        <h2>24%</h2>
+    </div>
+
+</section>
+
+</body>
+</html>

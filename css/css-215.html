@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 215 - Performance Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .dashboard {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .meter {
+            height: 14px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+
+        .meter span {
+            display: block;
+            width: 86%;
+            height: 100%;
+            background: #4f46e5;
+            border-radius: 20px;
+        }
+
+        @media(max-width:700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="dashboard">
+
+    <h1>System Performance</h1>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>CPU Usage</h2>
+            <h3>86%</h3>
+            <div class="meter"><span></span></div>
+        </div>
+
+        <div class="card">
+            <h2>Memory Usage</h2>
+            <h3>64%</h3>
+            <div class="meter"><span style="width:64%"></span></div>
+        </div>
+
+        <div class="card">
+            <h2>Storage</h2>
+            <h3>72%</h3>
+            <div class="meter"><span style="width:72%"></span></div>
+        </div>
+
+        <div class="card">
+            <h2>Network</h2>
+            <h3>48%</h3>
+            <div class="meter"><span style="width:48%"></span></div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

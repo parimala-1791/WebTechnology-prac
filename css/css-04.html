@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 04 - Selectors</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ccc;
+        }
+
+        /* Element selector */
+        p {
+            font-size: 18px;
+        }
+
+        /* Class selector */
+        .special {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* ID selector */
+        #unique {
+            color: green;
+        }
+
+        /* Group selector */
+        h2, h3 {
+            color: #2563eb;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS Selectors</h1>
+</header>
+
+<div class="content">
+
+    <h2>Different CSS Selectors</h2>
+
+    <p>
+        This paragraph uses an element selector.
+    </p>
+
+    <p class="special">
+        This paragraph uses a class selector.
+    </p>
+
+    <p id="unique">
+        This paragraph uses an ID selector.
+    </p>
+
+    <h3>Group Selector Example</h3>
+
+    <p>
+        CSS selectors determine which HTML elements
+        receive a particular style.
+    </p>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

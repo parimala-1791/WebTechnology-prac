@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 92 - Activity Feed</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .feed {
+            width: 550px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .item {
+            display: flex;
+            gap: 15px;
+            padding: 18px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #dbeafe;
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item h3 {
+            margin: 0;
+            color: #172554;
+        }
+
+        .item p {
+            color: #64748b;
+            margin: 6px 0 0;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="feed">
+
+        <h1>Recent Activity</h1>
+
+        <div class="item">
+            <div class="icon">✓</div>
+
+            <div>
+                <h3>Project Completed</h3>
+                <p>Website project was marked complete.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="icon">✉</div>
+
+            <div>
+                <h3>New Message</h3>
+                <p>You received a new project message.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="icon">+</div>
+
+            <div>
+                <h3>New User</h3>
+                <p>A new user joined your team.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

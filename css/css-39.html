@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 39 - Pricing Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            color: #172554;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .plan {
+            width: 280px;
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+        }
+
+        .plan h2 {
+            color: #2563eb;
+        }
+
+        .price {
+            font-size: 35px;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            line-height: 2;
+        }
+
+        .plan button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        .plan button:hover {
+            background: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pricing Plans</h1>
+
+    <div class="pricing">
+
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">₹199</div>
+
+            <ul>
+                <li>5 Projects</li>
+                <li>1 GB Storage</li>
+                <li>Email Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="plan">
+            <h2>Pro</h2>
+            <div class="price">₹499</div>
+
+            <ul>
+                <li>20 Projects</li>
+                <li>10 GB Storage</li>
+                <li>Priority Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <div class="price">₹999</div>
+
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>100 GB Storage</li>
+                <li>24/7 Support</li>
+            </ul>
+
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

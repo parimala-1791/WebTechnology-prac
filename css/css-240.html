@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 240 - Complete SaaS Admin Panel</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6fa;
+            color: #172033;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .layout {
+            display: flex;
+            min-height: 700px;
+        }
+
+        aside {
+            width: 230px;
+            background: #172033;
+            color: white;
+            padding: 25px;
+        }
+
+        aside h2 {
+            margin-bottom: 30px;
+        }
+
+        aside a {
+            display: block;
+            color: #d1d5db;
+            text-decoration: none;
+            padding: 13px 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+        }
+
+        .number {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        @media(max-width:900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width:650px) {
+            .layout {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="layout">
+
+    <aside>
+        <h2>SaaS Admin</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Projects</a>
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main>
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <p>Total Users</p>
+                <div class="number">12,540</div>
+            </div>
+
+            <div class="card">
+                <p>Revenue</p>
+                <div class="number">$84,250</div>
+            </div>
+
+            <div class="card">
+                <p>Projects</p>
+                <div class="number">342</div>
+            </div>
+
+            <div class="card">
+                <p>Growth</p>
+                <div class="number">18.5%</div>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <h2>Recent Users</h2>
+
+            <table>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Alex Johnson</td>
+                    <td>alex@example.com</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Sarah Miller</td>
+                    <td>sarah@example.com</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Ryan Kumar</td>
+                    <td>ryan@example.com</td>
+                    <td>Pending</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

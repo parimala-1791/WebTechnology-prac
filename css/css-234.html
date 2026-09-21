@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 234 - SaaS Messages</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .messages {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .message {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 14px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #4f46e5;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .time {
+            color: #6b7280;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="messages">
+
+    <h1>Messages</h1>
+
+    <div class="message">
+        <div class="avatar">AJ</div>
+        <div>
+            <strong>Alex Johnson</strong>
+            <p>Can you review the latest dashboard design?</p>
+            <span class="time">10 minutes ago</span>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="avatar">SM</div>
+        <div>
+            <strong>Sarah Miller</strong>
+            <p>The project report is ready.</p>
+            <span class="time">1 hour ago</span>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="avatar">RK</div>
+        <div>
+            <strong>Ryan Kumar</strong>
+            <p>Meeting scheduled for tomorrow.</p>
+            <span class="time">3 hours ago</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

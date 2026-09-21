@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 02 - Internal CSS</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ccc;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .box {
+            background-color: #dbeafe;
+            padding: 25px;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        a {
+            background-color: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Internal CSS</h1>
+    <p>CSS written inside the style tag</p>
+</header>
+
+<div class="content">
+
+    <h2>Internal CSS Example</h2>
+
+    <p>
+        Internal CSS is written inside the
+        &lt;style&gt; element in the HTML document.
+    </p>
+
+    <div class="box">
+        This box is styled using internal CSS.
+    </div>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+</body>
+</html>

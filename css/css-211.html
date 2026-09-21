@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 211 - Customer Analytics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .customers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .customer {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #4f46e5;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .value {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Customer Analytics</h1>
+
+    <div class="customers">
+
+        <div class="customer">
+            <div class="avatar">AJ</div>
+            <h2>Alex Johnson</h2>
+            <p>Premium Customer</p>
+            <div class="value">$4,820</div>
+            <p>Total spending</p>
+        </div>
+
+        <div class="customer">
+            <div class="avatar">SM</div>
+            <h2>Sarah Miller</h2>
+            <p>Standard Customer</p>
+            <div class="value">$2,340</div>
+            <p>Total spending</p>
+        </div>
+
+        <div class="customer">
+            <div class="avatar">RK</div>
+            <h2>Ryan Kumar</h2>
+            <p>Premium Customer</p>
+            <div class="value">$6,120</div>
+            <p>Total spending</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

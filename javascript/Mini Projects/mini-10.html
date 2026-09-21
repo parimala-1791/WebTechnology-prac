@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        input {
+            padding: 12px;
+            margin: 5px;
+            width: 35%;
+        }
+
+        button {
+            padding: 11px 18px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 25px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+        }
+
+        #total {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Expense Tracker</h1>
+
+    <input type="text" id="expense" placeholder="Expense name">
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="addExpense()">Add</button>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Expense</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="expenseList"></tbody>
+
+    </table>
+
+    <div id="total">Total: ₹0</div>
+
+</div>
+
+<script>
+
+let total = 0;
+
+function addExpense() {
+
+    let name = document.getElementById("expense").value;
+
+    let amount = Number(document.getElementById("amount").value);
+
+    if (name === "" || amount <= 0) {
+        alert("Enter valid expense details");
+        return;
+    }
+
+    let row = document.createElement("tr");
+
+    row.innerHTML =
+        "<td>" + name + "</td>" +
+        "<td>₹" + amount + "</td>" +
+        "<td><button onclick='deleteExpense(this, " +
+        amount + ")'>Delete</button></td>";
+
+    document.getElementById("expenseList").appendChild(row);
+
+    total += amount;
+
+    document.getElementById("total").innerHTML =
+        "Total: ₹" + total;
+
+    document.getElementById("expense").value = "";
+
+    document.getElementById("amount").value = "";
+}
+
+function deleteExpense(button, amount) {
+
+    button.parentElement.parentElement.remove();
+
+    total -= amount;
+
+    document.getElementById("total").innerHTML =
+        "Total: ₹" + total;
+}
+
+</script>
+
+</body>
+</html>

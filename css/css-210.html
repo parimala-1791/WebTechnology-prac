@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 210 - Analytics Activity Feed</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .feed {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .activity {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #4f46e5;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.06);
+        }
+
+        .time {
+            color: #6b7280;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="feed">
+
+    <h1>Recent Activity</h1>
+
+    <div class="activity">
+        <strong>New customer registered</strong>
+        <p>John created a new account.</p>
+        <span class="time">10 minutes ago</span>
+    </div>
+
+    <div class="activity">
+        <strong>Report generated</strong>
+        <p>Monthly analytics report was generated.</p>
+        <span class="time">35 minutes ago</span>
+    </div>
+
+    <div class="activity">
+        <strong>Payment received</strong>
+        <p>Payment of $450 was received.</p>
+        <span class="time">1 hour ago</span>
+    </div>
+
+</div>
+
+</body>
+</html>

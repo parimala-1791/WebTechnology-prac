@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 69 - Product Card</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .product {
+            width: 320px;
+            margin: 60px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+            text-align: center;
+        }
+
+        .product img {
+            width: 220px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h2 {
+            color: #172554;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .old-price {
+            color: #94a3b8;
+            text-decoration: line-through;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #172554;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 40px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product">
+
+        <img src="https://picsum.photos/400/300" alt="Product">
+
+        <h2>Smart Product</h2>
+
+        <p>Modern and useful product for everyday needs.</p>
+
+        <div class="old-price">₹2,999</div>
+
+        <div class="price">₹1,999</div>
+
+        <button>Add to Cart</button>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

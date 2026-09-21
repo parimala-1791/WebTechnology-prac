@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 236 - SaaS Kanban Board</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #eef1f6;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .board {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            overflow-x: auto;
+        }
+
+        .column {
+            min-width: 280px;
+            background: #e5e7eb;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .task {
+            background: white;
+            padding: 18px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.05);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="board">
+
+    <div class="column">
+        <h2>To Do</h2>
+
+        <div class="task">
+            <h3>Design Homepage</h3>
+            <span class="tag">Design</span>
+        </div>
+
+        <div class="task">
+            <h3>Create Database</h3>
+            <span class="tag">Backend</span>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>In Progress</h2>
+
+        <div class="task">
+            <h3>Build Dashboard</h3>
+            <span class="tag">Development</span>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Completed</h2>
+
+        <div class="task">
+            <h3>Project Setup</h3>
+            <span class="tag">Done</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

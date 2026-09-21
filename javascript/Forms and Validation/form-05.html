@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 05 - Registration Form</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            padding: 40px 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+
+        .box {
+            background: white;
+            max-width: 650px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+
+        .gender {
+            margin-top: 10px;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        .terms {
+            margin-top: 20px;
+        }
+
+        .terms input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 25px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Student Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+        >
+
+        <label for="email">Email</label>
+        <input
+            type="text"
+            id="email"
+            placeholder="Enter your email"
+        >
+
+        <label for="phone">Phone Number</label>
+        <input
+            type="text"
+            id="phone"
+            placeholder="Enter 10-digit phone number"
+        >
+
+        <label for="password">Password</label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter password"
+        >
+
+        <label for="course">Course</label>
+
+        <select id="course">
+
+            <option value="">Select Course</option>
+            <option value="Computer Science">
+                Computer Science
+            </option>
+
+            <option value="Data Science">
+                Data Science
+            </option>
+
+            <option value="Artificial Intelligence">
+                Artificial Intelligence
+            </option>
+
+        </select>
+
+        <div class="gender">
+
+            <label>Gender</label>
+
+            <input type="radio" name="gender" value="Male">
+            Male
+
+            <input type="radio" name="gender" value="Female">
+            Female
+
+            <input type="radio" name="gender" value="Other">
+            Other
+
+        </div>
+
+        <div class="terms">
+
+            <input type="checkbox" id="terms">
+
+            I agree to the terms and conditions.
+
+        </div>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <div id="message"></div>
+
+</div>
+
+<script>
+
+document.getElementById("registrationForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let name =
+        document.getElementById("name").value.trim();
+
+    let email =
+        document.getElementById("email").value.trim();
+
+    let phone =
+        document.getElementById("phone").value.trim();
+
+    let password =
+        document.getElementById("password").value;
+
+    let course =
+        document.getElementById("course").value;
+
+    let terms =
+        document.getElementById("terms").checked;
+
+    let gender =
+        document.querySelector('input[name="gender"]:checked');
+
+    let message =
+        document.getElementById("message");
+
+    let emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let phonePattern =
+        /^[0-9]{10}$/;
+
+
+    if (name === "") {
+
+        message.textContent =
+            "Please enter your full name.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (!emailPattern.test(email)) {
+
+        message.textContent =
+            "Please enter a valid email.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (!phonePattern.test(phone)) {
+
+        message.textContent =
+            "Please enter a valid 10-digit phone number.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (password.length < 8) {
+
+        message.textContent =
+            "Password must contain at least 8 characters.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (course === "") {
+
+        message.textContent =
+            "Please select a course.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (!gender) {
+
+        message.textContent =
+            "Please select your gender.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    if (!terms) {
+
+        message.textContent =
+            "Please accept the terms and conditions.";
+        message.style.color = "red";
+        return;
+
+    }
+
+
+    message.textContent =
+        "Registration successful!";
+
+    message.style.color = "green";
+
+});
+
+</script>
+
+</body>
+</html>

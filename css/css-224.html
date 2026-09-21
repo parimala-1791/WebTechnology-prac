@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 224 - SaaS Task Manager</title>
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .tasks {
+            display: grid;
+            gap: 15px;
+        }
+
+        .task {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: #6b7280;
+        }
+
+        .priority {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+        }
+
+        .medium {
+            background: #fef3c7;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Task Manager</h1>
+
+    <div class="tasks">
+
+        <div class="task">
+            <span class="done">Create homepage design</span>
+            <span>✓</span>
+        </div>
+
+        <div class="task">
+            <span>Complete dashboard</span>
+            <span class="priority">High</span>
+        </div>
+
+        <div class="task">
+            <span>Update documentation</span>
+            <span class="priority medium">Medium</span>
+        </div>
+
+        <div class="task">
+            <span>Test responsive layout</span>
+            <span class="priority">High</span>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

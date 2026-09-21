@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 195 - SaaS API Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.dashboard{padding:40px 8%}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;padding:25px;border-radius:15px}
+.card h2{color:#2563eb}
+.endpoint{background:#172033;color:#cbd5e1;padding:15px;border-radius:8px;margin-top:20px;font-family:monospace}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+<h1>API Dashboard</h1>
+
+<div class="cards">
+<div class="card"><p>Total Requests</p><h2>125K</h2></div>
+<div class="card"><p>Success Rate</p><h2>99.8%</h2></div>
+<div class="card"><p>Average Time</p><h2>120ms</h2></div>
+</div>
+
+<div class="endpoint">
+GET /api/users<br>
+GET /api/projects<br>
+POST /api/data
+</div>
+</div>
+
+</body>
+</html>

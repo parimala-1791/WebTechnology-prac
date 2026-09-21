@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 139 - Progress Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .dashboard {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .item {
+            margin: 25px 0;
+        }
+
+        .bar {
+            height: 12px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .html { width: 90%; }
+        .css { width: 80%; }
+        .js { width: 65%; }
+        .python { width: 75%; }
+    </style>
+</head>
+
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="dashboard">
+
+    <h1>Skill Progress</h1>
+
+    <div class="item">
+        <p>HTML - 90%</p>
+        <div class="bar"><div class="fill html"></div></div>
+    </div>
+
+    <div class="item">
+        <p>CSS - 80%</p>
+        <div class="bar"><div class="fill css"></div></div>
+    </div>
+
+    <div class="item">
+        <p>JavaScript - 65%</p>
+        <div class="bar"><div class="fill js"></div></div>
+    </div>
+
+    <div class="item">
+        <p>Python - 75%</p>
+        <div class="bar"><div class="fill python"></div></div>
+    </div>
+
+</div>
+
+</body>
+</html>

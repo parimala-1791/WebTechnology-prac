@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 257 - SaaS Cloud Platform</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg,#dbeafe,#ffffff);
+        }
+
+        .cloud {
+            font-size: 70px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .features {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        @media(max-width:700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <div class="cloud">☁️</div>
+
+    <h1>Cloud Made Simple</h1>
+
+    <p>Secure, scalable cloud infrastructure for modern teams.</p>
+
+</section>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>Storage</h2>
+        <p>Secure and scalable storage.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Security</h2>
+        <p>Enterprise-grade protection.</p>
+    </div>
+
+    <div class="feature">
+        <h2>Scalability</h2>
+        <p>Scale whenever your business grows.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 208 - Analytics Donut</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6fa;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .donut {
+            width: 220px;
+            height: 220px;
+            margin: 40px auto;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4f46e5 0 70%,
+                #e5e7eb 70% 100%
+            );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            width: 140px;
+            height: 140px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+
+    <h1>Customer Satisfaction</h1>
+
+    <div class="donut">
+        <div class="inner">70%</div>
+    </div>
+
+    <p>Overall customer satisfaction</p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 55 - Team Member Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #172554;
+            margin-top: 40px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            width: 250px;
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #cbd5e1;
+            transition: 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-8px);
+        }
+
+        .photo {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 50%;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .member h2 {
+            color: #172554;
+        }
+
+        .member p {
+            color: #64748b;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Team</h1>
+
+    <div class="team">
+
+        <div class="member">
+            <div class="photo">A</div>
+            <h2>Arun</h2>
+            <p>Frontend Developer</p>
+        </div>
+
+        <div class="member">
+            <div class="photo">P</div>
+            <h2>Parimala</h2>
+            <p>Data Science Student</p>
+        </div>
+
+        <div class="member">
+            <div class="photo">R</div>
+            <h2>Rahul</h2>
+            <p>UI Designer</p>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

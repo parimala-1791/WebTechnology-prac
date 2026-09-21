@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 191 - SaaS Invoice</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f7fb}
+.navigation{padding:20px;background:white}
+.navigation a{margin-right:20px;color:#2563eb}
+.invoice{max-width:800px;margin:40px auto;background:white;padding:40px;border-radius:15px}
+.header{display:flex;justify-content:space-between}
+.header h1{color:#2563eb}
+table{width:100%;margin-top:30px;border-collapse:collapse}
+th,td{padding:15px;border-bottom:1px solid #eee;text-align:left}
+.total{text-align:right;margin-top:25px}
+.total h2{color:#2563eb}
+</style>
+</head>
+<body>
+
+<div class="navigation">
+<a href="../index.html">Home</a>
+<a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="invoice">
+
+<div class="header">
+<div><h1>INVOICE</h1><p>CloudFlow SaaS</p></div>
+<div><p>Invoice #1025</p><p>September 2026</p></div>
+</div>
+
+<table>
+<tr><th>Item</th><th>Quantity</th><th>Price</th></tr>
+<tr><td>Pro Plan</td><td>1</td><td>$29</td></tr>
+<tr><td>Extra Storage</td><td>2</td><td>$10</td></tr>
+<tr><td>Support</td><td>1</td><td>$15</td></tr>
+</table>
+
+<div class="total">
+<p>Subtotal: $64</p>
+<h2>Total: $64</h2>
+</div>
+
+</div>
+
+</body>
+</html>

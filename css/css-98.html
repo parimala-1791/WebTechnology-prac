@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 98 - Admin Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 550px;
+        }
+
+        .sidebar {
+            background: #172554;
+            color: white;
+            padding: 25px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 8px 0;
+        }
+
+        .sidebar a:hover {
+            background: #2563eb;
+            border-radius: 6px;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .main h1 {
+            color: #172554;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #cbd5e1;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 750px) {
+
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+            <h2>Admin Panel</h2>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Orders</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+
+        </aside>
+
+        <main class="main">
+
+            <h1>Admin Dashboard</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <p>Total Users</p>
+                    <div class="value">5,420</div>
+                </div>
+
+                <div class="card">
+                    <p>New Orders</p>
+                    <div class="value">264</div>
+                </div>
+
+                <div class="card">
+                    <p>Revenue</p>
+                    <div class="value">₹3.5L</div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

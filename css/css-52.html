@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 52 - Search Bar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .search {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 350px;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px 0 0 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 14px 20px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #172554;
+        }
+
+        .navigation {
+            margin: 60px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+
+        @media (max-width: 500px) {
+            input {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Search Bar</h1>
+
+        <div class="search">
+            <input type="text" placeholder="Search here...">
+            <button>Search</button>
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>

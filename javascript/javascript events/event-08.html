@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 08 - Change Event</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        select {
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        #result {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Change Event</h1>
+
+    <select id="course">
+
+        <option value="">Select Course</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Data Science">Data Science</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Cyber Security">Cyber Security</option>
+
+    </select>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+document.getElementById("course").addEventListener("change", function() {
+
+    if (this.value === "") {
+
+        document.getElementById("result").textContent =
+            "Please select a course.";
+
+    } else {
+
+        document.getElementById("result").textContent =
+            "Selected course: " + this.value;
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

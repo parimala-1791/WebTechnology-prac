@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 06 - Audio and Video</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 30px;
+        }
+
+        .content {
+            width: 80%;
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ccc;
+        }
+
+        audio, video {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .navigation {
+            margin: 30px;
+        }
+
+        a {
+            background: #172554;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Audio and Video</h1>
+</header>
+
+<div class="content">
+
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <h2>Video</h2>
+
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <p>
+        Place <b>audio.mp3</b> and <b>video.mp4</b>
+        inside the html folder to test local files.
+    </p>
+
+</div>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to HTML Programs</a>
+</div>
+
+</body>
+</html>

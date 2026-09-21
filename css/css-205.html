@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 205 - AI Feature Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            border: 1px solid #e5e7eb;
+            transition: .3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        @media(max-width:800px) {
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media(max-width:550px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+    <h1>AI Platform Features</h1>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon">🤖</div>
+            <h2>AI Assistant</h2>
+            <p>Interact with an intelligent assistant.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">📊</div>
+            <h2>Analytics</h2>
+            <p>Analyze your business data.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">⚡</div>
+            <h2>Automation</h2>
+            <p>Automate repetitive workflows.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">🔒</div>
+            <h2>Security</h2>
+            <p>Protect your application and data.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">☁️</div>
+            <h2>Cloud</h2>
+            <p>Access your data anywhere.</p>
+        </div>
+
+        <div class="feature">
+            <div class="icon">📈</div>
+            <h2>Reports</h2>
+            <p>Create intelligent reports.</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 252 - SaaS Analytics Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f8fafc;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .dashboard {
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.1);
+        }
+
+        .bars {
+            display: flex;
+            align-items: end;
+            height: 250px;
+            gap: 20px;
+        }
+
+        .bar {
+            flex: 1;
+            background: #4f46e5;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .b1 { height: 45%; }
+        .b2 { height: 65%; }
+        .b3 { height: 55%; }
+        .b4 { height: 85%; }
+        .b5 { height: 75%; }
+
+        @media(max-width:600px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+
+    <h1>Powerful Analytics</h1>
+
+    <p>
+        Make better decisions using real-time business analytics.
+    </p>
+
+</section>
+
+<div class="dashboard">
+
+    <h2>Revenue Overview</h2>
+
+    <div class="bars">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+        <div class="bar b4"></div>
+        <div class="bar b5"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

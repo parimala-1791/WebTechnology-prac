@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 204 - AI Usage Statistics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        nav {
+            background: #111827;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.08);
+        }
+
+        .stat h2 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+
+        .bar {
+            height: 12px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            background: #4f46e5;
+        }
+
+        .w90 { width: 90%; }
+        .w75 { width: 75%; }
+        .w60 { width: 60%; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<div class="container">
+    <h1>AI Usage Statistics</h1>
+
+    <div class="stats">
+
+        <div class="stat">
+            <p>Total Requests</p>
+            <h2>25,430</h2>
+            <div class="bar">
+                <div class="fill w90"></div>
+            </div>
+        </div>
+
+        <div class="stat">
+            <p>Successful Requests</p>
+            <h2>19,820</h2>
+            <div class="bar">
+                <div class="fill w75"></div>
+            </div>
+        </div>
+
+        <div class="stat">
+            <p>Failed Requests</p>
+            <h2>3,120</h2>
+            <div class="bar">
+                <div class="fill w60"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

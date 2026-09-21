@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 166 - Data Visualization Cards</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .navigation {
+            padding: 20px;
+            background: white;
+        }
+
+        .navigation a {
+            margin-right: 20px;
+            color: #2563eb;
+        }
+
+        .visuals {
+            padding: 40px 8%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .bars {
+            height: 180px;
+            display: flex;
+            align-items: end;
+            gap: 20px;
+        }
+
+        .bar {
+            width: 40px;
+            background: #2563eb;
+        }
+
+        .b1 { height: 70px; }
+        .b2 { height: 130px; }
+        .b3 { height: 100px; }
+        .b4 { height: 160px; }
+
+        .circle {
+            width: 180px;
+            height: 180px;
+            margin: auto;
+            border-radius: 50%;
+            background: conic-gradient(
+                #2563eb 0deg 250deg,
+                #dbeafe 250deg 360deg
+            );
+        }
+
+        @media(max-width:700px) {
+            .visuals {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navigation">
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</div>
+
+<div class="visuals">
+
+    <div class="card">
+        <h2>Monthly Sales</h2>
+
+        <div class="bars">
+            <div class="bar b1"></div>
+            <div class="bar b2"></div>
+            <div class="bar b3"></div>
+            <div class="bar b4"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Completion Rate</h2>
+
+        <div class="circle"></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser 07 - Notifications</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 12px 22px;
+            margin: 5px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to JavaScript Programs</a>
+</nav>
+
+<div class="box">
+
+    <h1>Browser Notifications</h1>
+
+    <p>Allow notifications when the browser asks for permission.</p>
+
+    <button onclick="showNotification()">
+        Show Notification
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function showNotification() {
+
+    let result = document.getElementById("result");
+
+    if (!("Notification" in window)) {
+
+        result.textContent =
+            "Notifications are not supported.";
+
+        return;
+    }
+
+    if (Notification.permission === "granted") {
+
+        new Notification("JavaScript Demo", {
+            body: "This is a browser notification."
+        });
+
+        result.textContent = "Notification displayed.";
+
+    } else if (Notification.permission !== "denied") {
+
+        Notification.requestPermission().then(function(permission) {
+
+            if (permission === "granted") {
+
+                new Notification("JavaScript Demo", {
+                    body: "Notifications are now enabled!"
+                });
+
+                result.textContent =
+                    "Notification permission granted.";
+
+            } else {
+
+                result.textContent =
+                    "Notification permission denied.";
+
+            }
+
+        });
+
+    } else {
+
+        result.textContent =
+            "Notifications are blocked in browser settings.";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

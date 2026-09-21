@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 201 - AI Dashboard Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+        }
+
+        nav {
+            background: #172033;
+            padding: 18px 8%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+
+        .hero {
+            padding: 80px 8%;
+            background: linear-gradient(135deg, #e8efff, #ffffff);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #4f46e5;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .ai-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.1);
+            width: 320px;
+        }
+
+        .ai-card h2 {
+            margin-bottom: 15px;
+        }
+
+        .ai-card span {
+            color: #4f46e5;
+            font-weight: bold;
+        }
+
+        @media(max-width:700px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to CSS Programs</a>
+</nav>
+
+<section class="hero">
+    <div>
+        <h1>AI Analytics</h1>
+        <p>
+            Transform your data into intelligent insights
+            using a modern AI-powered dashboard.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="ai-card">
+        <h2>AI Insight</h2>
+        <p>Your business performance increased by <span>24%</span> this month.</p>
+    </div>
+</section>
+
+</body>
+</html>

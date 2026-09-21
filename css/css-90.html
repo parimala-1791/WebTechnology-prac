@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 90 - Donut Chart</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 70px;
+        }
+
+        h1 {
+            color: #172554;
+        }
+
+        .donut {
+            width: 220px;
+            height: 220px;
+            margin: 40px auto;
+            border-radius: 50%;
+            background: conic-gradient(
+                #2563eb 0deg 250deg,
+                #dbeafe 250deg 360deg
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .center {
+            width: 140px;
+            height: 140px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #172554;
+        }
+
+        .center p {
+            margin: 5px;
+            color: #64748b;
+        }
+
+        .navigation {
+            margin: 60px;
+        }
+
+        .navigation a {
+            margin: 10px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Project Completion</h1>
+
+        <div class="donut">
+
+            <div class="center">
+                <div class="value">70%</div>
+                <p>Completed</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Back to CSS Programs</a>
+    </div>
+
+</body>
+</html>
